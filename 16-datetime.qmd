@@ -26,8 +26,6 @@ datetime.datetime(2020, 12, 25, 13, 30, 5)
 2020-12-25 13:30:05
 ```
 
---
-
 ## Acceso a los componentes de una fecha
 
 - `date.today()` : Devuelve un objeto del tipo `date` la fecha del sistema en el momento en el que se ejecuta.

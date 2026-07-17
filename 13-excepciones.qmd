@@ -1,7 +1,5 @@
 # Excepciones
 
-## Control de errores mediante excepciones
-
 Python utiliza un objeto especial llamado **excepción** para controlar cualquier error que pueda ocurrir durante la ejecución de un programa.
 
 Cuando ocurre un error durante la ejecución de un programa, Python crea una excepción. Si no se controla esta excepción la ejecución del programa se detiene y se muestra el error (_traceback_).
@@ -13,24 +11,23 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 
-### Tipos de excepciones
+## Tipos de excepciones
 
 Los principales excepciones definidas en Python son:
 
 - `TypeError` : Ocurre cuando se aplica una operación o función a un dato del tipo inapropiado.
-- `ZeroDivisionError` : Ocurre cuando se itenta dividir por cero.
+- `ZeroDivisionError` : Ocurre cuando se intenta dividir por cero.
 - `OverflowError` : Ocurre cuando un cálculo excede el límite para un tipo de dato numérico.
 - `IndexError` : Ocurre cuando se intenta acceder a una secuencia con un índice que no existe.
 - `KeyError` : Ocurre cuando se intenta acceder a un diccionario con una clave que no existe.
 - `FileNotFoundError` : Ocurre cuando se intenta acceder a un fichero que no existe en la ruta indicada.
 - `ImportError` : Ocurre cuando falla la importación de un módulo.
 
-Consultar la documentaciónde Python para ver la [lista de exepciones predefinidas](https://docs.python.org/3/library/exceptions.html).
+Consultar la documentación de Python para ver la [lista de excepciones predefinidas](https://docs.python.org/3/library/exceptions.html).
 
-### Control de excepciones
-#### `try - except - else`
+## Control de excepciones (`try - except - else`)
 
-Para evitar la interrución de la ejecución del programa cuando se produce un error, es posible controlar la exepción que se genera con la siguiente instrucción:
+Para evitar la interrupción de la ejecución del programa cuando se produce un error, es posible controlar la excepción que se genera con la siguiente instrucción:
 
 > `try:`  
 &ensp;&ensp;&ensp;&ensp; _bloque código 1_  
@@ -40,8 +37,6 @@ Para evitar la interrución de la ejecución del programa cuando se produce un e
 &ensp;&ensp;&ensp;&ensp; _bloque código 3_
 
 Esta instrucción ejecuta el primer bloque de código y si se produce un error que genera una excepción del tipo _excepción_ entonces ejecuta el segundo bloque de código, mientras que si no se produce ningún error, se ejecuta el tercer bloque de código.
-
-### Control de excepciones
 
 ```python
 >>> def division(a, b):

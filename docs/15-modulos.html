@@ -80,8 +80,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3401a95b39ddee773afad36d04e16f62.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-acd2f942bef30007f70c13ca6b9aeec6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-82be1df1625442a14a32b67ca9799ca5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-407db9a3e711352b026d38d8f50b5f87.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="15&nbsp; Módulos – Manual de Python">
 <meta property="og:description" content="">
-<meta property="og:image" content="img/logo-python.png">
+<meta property="og:image" content="img/logos/sticker.png">
 <meta property="og:site_name" content="Manual de Python">
 </head>
 
@@ -403,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-comprension-colecciones.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -487,13 +487,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#módulos" id="toc-módulos" class="nav-link active" data-scroll-target="#módulos"><span class="header-section-number">15.1</span> Módulos</a>
-  <ul class="collapse">
-  <li><a href="#importación-completa-de-módulos-import" id="toc-importación-completa-de-módulos-import" class="nav-link" data-scroll-target="#importación-completa-de-módulos-import"><span class="header-section-number">15.1.1</span> Importación completa de módulos (<code>import</code>)</a></li>
-  <li><a href="#importación-parcial-de-módulos-from-import" id="toc-importación-parcial-de-módulos-from-import" class="nav-link" data-scroll-target="#importación-parcial-de-módulos-from-import"><span class="header-section-number">15.1.2</span> Importación parcial de módulos (<code>from import</code>)</a></li>
-  <li><a href="#módulos-de-la-librería-estándar-más-importantes" id="toc-módulos-de-la-librería-estándar-más-importantes" class="nav-link" data-scroll-target="#módulos-de-la-librería-estándar-más-importantes"><span class="header-section-number">15.1.3</span> Módulos de la librería estándar más importantes</a></li>
-  <li><a href="#otras-librerías-imprescindibles" id="toc-otras-librerías-imprescindibles" class="nav-link" data-scroll-target="#otras-librerías-imprescindibles"><span class="header-section-number">15.1.4</span> Otras librerías imprescindibles</a></li>
-  </ul></li>
+  <li><a href="#importación-completa-de-módulos-import" id="toc-importación-completa-de-módulos-import" class="nav-link active" data-scroll-target="#importación-completa-de-módulos-import"><span class="header-section-number">15.1</span> Importación completa de módulos (<code>import</code>)</a></li>
+  <li><a href="#importación-parcial-de-módulos-from-import" id="toc-importación-parcial-de-módulos-from-import" class="nav-link" data-scroll-target="#importación-parcial-de-módulos-from-import"><span class="header-section-number">15.2</span> Importación parcial de módulos (<code>from import</code>)</a></li>
+  <li><a href="#módulos-de-la-librería-estándar-más-importantes" id="toc-módulos-de-la-librería-estándar-más-importantes" class="nav-link" data-scroll-target="#módulos-de-la-librería-estándar-más-importantes"><span class="header-section-number">15.3</span> Módulos de la librería estándar más importantes</a></li>
+  <li><a href="#otras-librerías-imprescindibles" id="toc-otras-librerías-imprescindibles" class="nav-link" data-scroll-target="#otras-librerías-imprescindibles"><span class="header-section-number">15.4</span> Otras librerías imprescindibles</a></li>
   </ul>
 </nav>
     </div>
@@ -520,25 +517,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="módulos" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="módulos"><span class="header-section-number">15.1</span> Módulos</h2>
 <p>El código de un programa en Python puede reutilizarse en otro importándolo. Cualquier fichero con código de Python reutilizable se conoce como <em>módulo</em> o <em>librería</em>.</p>
 <p>Los módulos suelen contener funciones reutilizables, pero también pueden definir variables con datos simples o compuestos (listas, diccionarios, etc), o cualquier otro código válido en Python.</p>
 <p>Python permite importar un módulo completo o sólo algunas partes de él. Cuando se importa un módulo completo, el intérprete de Python ejecuta todo el código que contiene el módulo, mientras que si solo se importan algunas partes del módulo, solo se ejecutarán esas partes.</p>
-<section id="importación-completa-de-módulos-import" class="level3" data-number="15.1.1">
-<h3 data-number="15.1.1" class="anchored" data-anchor-id="importación-completa-de-módulos-import"><span class="header-section-number">15.1.1</span> Importación completa de módulos (<code>import</code>)</h3>
+<section id="importación-completa-de-módulos-import" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="importación-completa-de-módulos-import"><span class="header-section-number">15.1</span> Importación completa de módulos (<code>import</code>)</h2>
 <ul>
 <li><p><code>import M</code> : Ejecuta el código que contiene <code>M</code> y crea una referencia a él, de manera que pueden invocarse un objeto o función <code>f</code> definida en él mediante la sintaxis <code>M.f</code>.</p></li>
 <li><p><code>import M as N</code> : Ejecuta el código que contiene <code>M</code> y crea una referencia a él con el nombre <code>N</code>, de manera que pueden invocarse un objeto o función <code>f</code> definida en él mediante la sintaxis <code>N.f</code>. Esta forma es similar a la anterior, pero se suele usar cuando el nombre del módulo es muy largo para utilizar un alias más corto.</p></li>
 </ul>
 </section>
-<section id="importación-parcial-de-módulos-from-import" class="level3" data-number="15.1.2">
-<h3 data-number="15.1.2" class="anchored" data-anchor-id="importación-parcial-de-módulos-from-import"><span class="header-section-number">15.1.2</span> Importación parcial de módulos (<code>from import</code>)</h3>
+<section id="importación-parcial-de-módulos-from-import" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="importación-parcial-de-módulos-from-import"><span class="header-section-number">15.2</span> Importación parcial de módulos (<code>from import</code>)</h2>
 <ul>
 <li><p><code>from M import f, g, ...</code> : Ejecuta el código que contiene <code>M</code> y crea referencias a los objetos <code>f, g, ...</code>, de manera que pueden ser invocados por su nombre. De esta manera para invocar cualquiera de estos objetos no hace falta precederlos por el nombre del módulo, basta con escribir su nombre.</p></li>
 <li><p><code>from M import *</code> : Ejecuta el código que contiene <code>M</code> y crea referencias a todos los objetos públicos (aquellos que no empiezan por el carácter <code>_</code>) definidos en el módulo, de manera que pueden ser invocados por su nombre.</p></li>
 </ul>
-<p><i class="fa fa-exclamation-triangle" style="color:red;"></i>Cuando se importen módulos de esta manera hay que tener cuidado de que no haya coincidencias en los nombres de funciones, variables u otros objetos.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cuando se importen módulos de esta manera hay que tener cuidado de que no haya coincidencias en los nombres de funciones, variables u otros objetos.</p>
+</div>
+</div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> calendar</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(calendar.month(<span class="dv">2019</span>, <span class="dv">4</span>))</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>April <span class="dv">2019</span></span>
@@ -552,8 +559,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> cos(pi)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="op">-</span><span class="fl">1.0</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="módulos-de-la-librería-estándar-más-importantes" class="level3" data-number="15.1.3">
-<h3 data-number="15.1.3" class="anchored" data-anchor-id="módulos-de-la-librería-estándar-más-importantes"><span class="header-section-number">15.1.3</span> Módulos de la librería estándar más importantes</h3>
+<section id="módulos-de-la-librería-estándar-más-importantes" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="módulos-de-la-librería-estándar-más-importantes"><span class="header-section-number">15.3</span> Módulos de la librería estándar más importantes</h2>
 <p>Python viene con una <a href="https://docs.python.org/3/py-modindex.html">biblioteca de módulos predefinidos</a> que no necesitan instalarse. Algunos de los más utilizados son:</p>
 <ul>
 <li><a href="https://docs.python.org/3/library/sys.html">sys</a>: Funciones y parámetros específicos del sistema operativo.</li>
@@ -567,8 +574,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://docs.python.org/3/library/random.html">random</a>: Generación de números pseudo-aleatorios.</li>
 </ul>
 </section>
-<section id="otras-librerías-imprescindibles" class="level3" data-number="15.1.4">
-<h3 data-number="15.1.4" class="anchored" data-anchor-id="otras-librerías-imprescindibles"><span class="header-section-number">15.1.4</span> Otras librerías imprescindibles</h3>
+<section id="otras-librerías-imprescindibles" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="otras-librerías-imprescindibles"><span class="header-section-number">15.4</span> Otras librerías imprescindibles</h2>
 <p>Estas librerías no vienen en la distribución estándar de Python y necesitan instalarse. También puede optarse por la distribución <a href="https://www.anaconda.com/">Anaconda</a> que incorpora la mayoría de estas librerías.</p>
 <ul>
 <li><a href="https://www.numpy.org/">NumPy</a>: Funciones matemáticas avanzadas y arrays.</li>
@@ -579,7 +586,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

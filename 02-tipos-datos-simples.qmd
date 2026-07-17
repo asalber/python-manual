@@ -123,11 +123,15 @@ Cada carácter tiene asociado un índice que permite acceder a él.
 
 - `c[i]` devuelve el carácter de la cadena `c` con el índice `i`.
 
-<i class="fa fa-exclamation-triangle" style="color:red;"></i> _El índice del primer carácter de la cadena es 0._
+::: {.callout-warning}
+El índice del primer carácter de la cadena es 0.
+:::
 
 También se pueden utilizar índices negativos para recorrer la cadena del final al principio.
 
-<i class="fa fa-exclamation-triangle" style="color:red;"></i> _El índice del último carácter de la cadena es -1._
+::: {.callout-warning}
+El índice del último carácter de la cadena es -1.
+:::
 
 ```python
 >>> 'Python'[0]
@@ -190,7 +194,9 @@ True
 - `c1 <= c2` : Devuelve `True` si la cadena `c1` antecede o es igual a la cadena `c2` y `False` en caso contrario.
 - `c1 != c2` : Devuelve `True` si la cadena `c1` es distinta de la cadena `c2` y `False` en caso contrario.
 
-<i class="fa fa-exclamation-triangle" style="color:red;"></i> _Utilizan el orden establecido en el [código ASCII](https://www.codigosascii.com/)_.
+::: {.callout-warning}
+Utilizan el orden establecido en el [código ASCII](https://www.codigosascii.com/).
+:::
 
 ```python
 >>> 'Python' == 'python'

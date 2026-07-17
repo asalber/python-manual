@@ -80,8 +80,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3401a95b39ddee773afad36d04e16f62.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-acd2f942bef30007f70c13ca6b9aeec6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-82be1df1625442a14a32b67ca9799ca5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-407db9a3e711352b026d38d8f50b5f87.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="3&nbsp; Entrada y Salida por Terminal – Manual de Python">
 <meta property="og:description" content="">
-<meta property="og:image" content="img/logo-python.png">
+<meta property="og:image" content="img/logos/sticker.png">
 <meta property="og:site_name" content="Manual de Python">
 </head>
 
@@ -403,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-comprension-colecciones.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -487,10 +487,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#entrada-por-terminal-input" id="toc-entrada-por-terminal-input" class="nav-link active" data-scroll-target="#entrada-por-terminal-input"><span class="header-section-number">3.1</span> Entrada por terminal (<code>input()</code>)</a>
-  <ul class="collapse">
-  <li><a href="#salida-por-terminal-print" id="toc-salida-por-terminal-print" class="nav-link" data-scroll-target="#salida-por-terminal-print"><span class="header-section-number">3.1.1</span> Salida por terminal (<code>print()</code>)</a></li>
-  </ul></li>
+  <li><a href="#entrada-por-terminal-input" id="toc-entrada-por-terminal-input" class="nav-link active" data-scroll-target="#entrada-por-terminal-input"><span class="header-section-number">3.1</span> Entrada por terminal (<code>input()</code>)</a></li>
+  <li><a href="#salida-por-terminal-print" id="toc-salida-por-terminal-print" class="nav-link" data-scroll-target="#salida-por-terminal-print"><span class="header-section-number">3.2</span> Salida por terminal (<code>print()</code>)</a></li>
+  <li><a href="#salida-formateada-por-terminal-cadenas-f" id="toc-salida-formateada-por-terminal-cadenas-f" class="nav-link" data-scroll-target="#salida-formateada-por-terminal-cadenas-f"><span class="header-section-number">3.3</span> Salida formateada por terminal (cadenas f)</a></li>
   </ul>
 </nav>
     </div>
@@ -521,7 +520,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="3.1" class="anchored" data-anchor-id="entrada-por-terminal-input"><span class="header-section-number">3.1</span> Entrada por terminal (<code>input()</code>)</h2>
 <p>Para asignar a una variable un valor introducido por el usuario en la consola se utiliza la instrucción</p>
 <p><code>input(mensaje)</code> : Muestra la cadena <code>mensaje</code> por la terminal y devuelve una cadena con la entrada del usuario.</p>
-<p><i class="fa fa-exclamation-triangle" style="color:red;"></i> <em>El valor devuelto siempre es una cadena, incluso si el usuario introduce un dato numérico.</em></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El valor devuelto siempre es una cadena, incluso si el usuario introduce un dato numérico.</p>
+</div>
+</div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> language <span class="op">=</span> <span class="bu">input</span>(<span class="st">'¿Cuál es tu lenguaje favorito? '</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>¿Cuál es tu lenguaje favorito? Python</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> language</span>
@@ -530,8 +541,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>¿Cuál es tu edad? <span class="dv">20</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> age</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">'20'</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<section id="salida-por-terminal-print" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="salida-por-terminal-print"><span class="header-section-number">3.1.1</span> Salida por terminal (<code>print()</code>)</h3>
+</section>
+<section id="salida-por-terminal-print" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="salida-por-terminal-print"><span class="header-section-number">3.2</span> Salida por terminal (<code>print()</code>)</h2>
 <p>Para mostrar un dato por la terminal se utiliza la instrucción</p>
 <p><code>print(dato1, ..., sep=' ', end='\n', file=sys.stdout</code>)</p>
 <p>donde</p>
@@ -552,9 +564,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>HolaAlf</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">'Hola'</span>, name, end<span class="op">=</span><span class="st">'!</span><span class="ch">\n</span><span class="st">'</span>)</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>Hola Alf<span class="op">!</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-
-
 </section>
+<section id="salida-formateada-por-terminal-cadenas-f" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="salida-formateada-por-terminal-cadenas-f"><span class="header-section-number">3.3</span> Salida formateada por terminal (cadenas f)</h2>
+<p>Para construir cadenas que combinen texto con el valor de variables o expresiones de una forma más cómoda y legible que con <code>format()</code>, Python ofrece las <strong>cadenas f</strong> (<em>f-strings</em>). Se escriben anteponiendo la letra <code>f</code> a la cadena, y dentro de ella se pueden incluir variables o expresiones entre llaves <code>{}</code>, que serán sustituidas por su valor.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> name <span class="op">=</span> <span class="st">'Alf'</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> age <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="ss">f'Me llamo </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> y tengo </span><span class="sc">{</span>age<span class="sc">}</span><span class="ss"> años'</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>Me llamo Alf y tengo <span class="dv">20</span> años</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="ss">f'El año que viene tendré </span><span class="sc">{</span>age <span class="op">+</span> <span class="dv">1</span><span class="sc">}</span><span class="ss"> años'</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>El año que viene tendré <span class="dv">21</span> años</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Al igual que con <code>format()</code>, dentro de las llaves se puede añadir, tras el signo <code>:</code>, un formato para controlar la alineación, la anchura o el número de decimales con los que se muestra el valor:</p>
+<ul>
+<li><code>{valor:n}</code> : Alinea <code>valor</code> a la izquierda rellenando con espacios por la derecha hasta los <code>n</code> caracteres.</li>
+<li><code>{valor:&gt;n}</code> : Alinea <code>valor</code> a la derecha rellenando con espacios por la izquierda hasta los <code>n</code> caracteres.</li>
+<li><code>{valor:^n}</code> : Alinea <code>valor</code> en el centro rellenando con espacios por la izquierda y por la derecha hasta los <code>n</code> caracteres.</li>
+<li><code>{valor:nd}</code> : Formatea <code>valor</code> como un número entero con <code>n</code> caracteres rellenando con espacios en blanco por la izquierda.</li>
+<li><code>{valor:n.mf}</code> : Formatea <code>valor</code> como un número real con un tamaño de <code>n</code> caracteres (incluido el separador de decimales) y <code>m</code> cifras decimales, rellenando con espacios en blanco por la izquierda.</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> pi <span class="op">=</span> <span class="fl">3.141592</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="ss">f'Pi vale </span><span class="sc">{</span>pi<span class="sc">:8.2f}</span><span class="ss">'</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Pi vale     <span class="fl">3.14</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> dia <span class="op">=</span> <span class="st">'Lunes'</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> temperatura <span class="op">=</span> <span class="fl">21.4</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>dia<span class="sc">:&lt;10}{</span>temperatura<span class="sc">:&gt;6.1f}</span><span class="ss"> ºC'</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>Lunes       <span class="fl">21.4</span> ºC</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Las cadenas f solo están disponibles a partir de Python 3.6.</p>
+</div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->

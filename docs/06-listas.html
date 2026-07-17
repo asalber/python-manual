@@ -80,8 +80,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3401a95b39ddee773afad36d04e16f62.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-acd2f942bef30007f70c13ca6b9aeec6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-82be1df1625442a14a32b67ca9799ca5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-407db9a3e711352b026d38d8f50b5f87.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="6&nbsp; Listas – Manual de Python">
 <meta property="og:description" content="">
-<meta property="og:image" content="img/logo-python.png">
+<meta property="og:image" content="img/logos/sticker.png">
 <meta property="og:site_name" content="Manual de Python">
 </head>
 
@@ -403,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-comprension-colecciones.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -487,15 +487,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#listas" id="toc-listas" class="nav-link active" data-scroll-target="#listas"><span class="header-section-number">6.1</span> Listas</a>
-  <ul class="collapse">
-  <li><a href="#creación-de-listas-mediante-la-función-list" id="toc-creación-de-listas-mediante-la-función-list" class="nav-link" data-scroll-target="#creación-de-listas-mediante-la-función-list"><span class="header-section-number">6.1.1</span> Creación de listas mediante la función <code>list()</code></a></li>
-  <li><a href="#acceso-a-los-elementos-de-una-lista" id="toc-acceso-a-los-elementos-de-una-lista" class="nav-link" data-scroll-target="#acceso-a-los-elementos-de-una-lista"><span class="header-section-number">6.1.2</span> Acceso a los elementos de una lista</a></li>
-  <li><a href="#sublistas" id="toc-sublistas" class="nav-link" data-scroll-target="#sublistas"><span class="header-section-number">6.1.3</span> Sublistas</a></li>
-  <li><a href="#operaciones-que-no-modifican-una-lista" id="toc-operaciones-que-no-modifican-una-lista" class="nav-link" data-scroll-target="#operaciones-que-no-modifican-una-lista"><span class="header-section-number">6.1.4</span> Operaciones que no modifican una lista</a></li>
-  <li><a href="#operaciones-que-modifican-una-lista" id="toc-operaciones-que-modifican-una-lista" class="nav-link" data-scroll-target="#operaciones-que-modifican-una-lista"><span class="header-section-number">6.1.5</span> Operaciones que modifican una lista</a></li>
-  <li><a href="#copia-de-listas" id="toc-copia-de-listas" class="nav-link" data-scroll-target="#copia-de-listas"><span class="header-section-number">6.1.6</span> Copia de listas</a></li>
-  </ul></li>
+  <li><a href="#creación-de-listas-con-corchetes" id="toc-creación-de-listas-con-corchetes" class="nav-link active" data-scroll-target="#creación-de-listas-con-corchetes"><span class="header-section-number">6.1</span> Creación de listas con corchetes</a></li>
+  <li><a href="#creación-de-listas-mediante-la-función-list" id="toc-creación-de-listas-mediante-la-función-list" class="nav-link" data-scroll-target="#creación-de-listas-mediante-la-función-list"><span class="header-section-number">6.2</span> Creación de listas mediante la función <code>list()</code></a></li>
+  <li><a href="#acceso-a-los-elementos-de-una-lista" id="toc-acceso-a-los-elementos-de-una-lista" class="nav-link" data-scroll-target="#acceso-a-los-elementos-de-una-lista"><span class="header-section-number">6.3</span> Acceso a los elementos de una lista</a></li>
+  <li><a href="#sublistas" id="toc-sublistas" class="nav-link" data-scroll-target="#sublistas"><span class="header-section-number">6.4</span> Sublistas</a></li>
+  <li><a href="#operaciones-que-no-modifican-una-lista" id="toc-operaciones-que-no-modifican-una-lista" class="nav-link" data-scroll-target="#operaciones-que-no-modifican-una-lista"><span class="header-section-number">6.5</span> Operaciones que no modifican una lista</a></li>
+  <li><a href="#operaciones-que-modifican-una-lista" id="toc-operaciones-que-modifican-una-lista" class="nav-link" data-scroll-target="#operaciones-que-modifican-una-lista"><span class="header-section-number">6.6</span> Operaciones que modifican una lista</a></li>
+  <li><a href="#copia-de-listas" id="toc-copia-de-listas" class="nav-link" data-scroll-target="#copia-de-listas"><span class="header-section-number">6.7</span> Copia de listas</a></li>
   </ul>
 </nav>
     </div>
@@ -522,16 +520,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="listas" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="listas"><span class="header-section-number">6.1</span> Listas</h2>
 <p>Una <strong>lista</strong> es una secuencias ordenadas de objetos de distintos tipos.</p>
-<p>Se construyen poniendo los elementos entre corchetes <code>[</code> <code>]</code> separados por comas.</p>
 <p>Se caracterizan por:</p>
 <ul>
 <li>Tienen orden.</li>
 <li>Pueden contener elementos de distintos tipos.</li>
 <li>Son mutables, es decir, pueden alterarse durante la ejecución de un programa.</li>
 </ul>
+<section id="creación-de-listas-con-corchetes" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="creación-de-listas-con-corchetes"><span class="header-section-number">6.1</span> Creación de listas con corchetes</h2>
+<p>Para crear una lista, basta con poner los elementos entre corchetes <code>[</code> <code>]</code> separados por comas.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lista vacía</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>([])</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'list'</span><span class="op">&gt;</span></span>
@@ -539,8 +537,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> [<span class="dv">1</span>, <span class="st">"dos"</span>, <span class="va">True</span>]</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Listas anidadas</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> [<span class="dv">1</span>, [<span class="dv">2</span>, <span class="dv">3</span>], <span class="dv">4</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<section id="creación-de-listas-mediante-la-función-list" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="creación-de-listas-mediante-la-función-list"><span class="header-section-number">6.1.1</span> Creación de listas mediante la función <code>list()</code></h3>
+</section>
+<section id="creación-de-listas-mediante-la-función-list" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="creación-de-listas-mediante-la-función-list"><span class="header-section-number">6.2</span> Creación de listas mediante la función <code>list()</code></h2>
 <p>Otra forma de crear listas es mediante la función <code>list()</code>.</p>
 <ul>
 <li><code>list(c)</code> : Crea una lista con los elementos de la secuencia o colección <code>c</code>.</li>
@@ -553,13 +552,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="st">"Python"</span>)</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>[<span class="st">'P'</span>, <span class="st">'y'</span>, <span class="st">'t'</span>, <span class="st">'h'</span>, <span class="st">'o'</span>, <span class="st">'n'</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="acceso-a-los-elementos-de-una-lista" class="level3" data-number="6.1.2">
-<h3 data-number="6.1.2" class="anchored" data-anchor-id="acceso-a-los-elementos-de-una-lista"><span class="header-section-number">6.1.2</span> Acceso a los elementos de una lista</h3>
+<section id="acceso-a-los-elementos-de-una-lista" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="acceso-a-los-elementos-de-una-lista"><span class="header-section-number">6.3</span> Acceso a los elementos de una lista</h2>
 <p>Se utilizan los mismos operadores de acceso que para cadenas de caracteres.</p>
 <ul>
 <li><code>l[i]</code> : Devuelve el elemento de la lista <code>l</code> con el índice <code>i</code>.</li>
 </ul>
-<p><i class="fa fa-exclamation-triangle" style="color:red;"></i> <em>El índice del primer elemento de la lista es 0.</em></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El índice del primer elemento de la lista es 0.</p>
+</div>
+</div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> [<span class="st">'P'</span>, <span class="st">'y'</span>, <span class="st">'t'</span>, <span class="st">'h'</span>, <span class="st">'o'</span>, <span class="st">'n'</span>]</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> a[<span class="dv">0</span>]</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">'P'</span></span>
@@ -572,8 +583,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> a[<span class="op">-</span><span class="dv">1</span>]</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co">'n'</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="sublistas" class="level3" data-number="6.1.3">
-<h3 data-number="6.1.3" class="anchored" data-anchor-id="sublistas"><span class="header-section-number">6.1.3</span> Sublistas</h3>
+<section id="sublistas" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="sublistas"><span class="header-section-number">6.4</span> Sublistas</h2>
 <ul>
 <li><code>l[i:j:k]</code> : Devuelve la sublista desde el elemento de <code>l</code> con el índice <code>i</code> hasta el elemento anterior al índice <code>j</code>, tomando elementos cada <code>k</code>.</li>
 </ul>
@@ -589,8 +600,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> a[<span class="dv">0</span>:<span class="dv">6</span>:<span class="dv">2</span>]</span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>[<span class="st">'P'</span>, <span class="st">'t'</span>, <span class="st">'o'</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="operaciones-que-no-modifican-una-lista" class="level3" data-number="6.1.4">
-<h3 data-number="6.1.4" class="anchored" data-anchor-id="operaciones-que-no-modifican-una-lista"><span class="header-section-number">6.1.4</span> Operaciones que no modifican una lista</h3>
+<section id="operaciones-que-no-modifican-una-lista" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="operaciones-que-no-modifican-una-lista"><span class="header-section-number">6.5</span> Operaciones que no modifican una lista</h2>
 <ul>
 <li><code>len(l)</code> : Devuelve el número de elementos de la lista <code>l</code>.</li>
 <li><code>min(l)</code> : Devuelve el mínimo elemento de la lista <code>l</code> siempre que los datos sean comparables.</li>
@@ -622,8 +633,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">any</span>([<span class="dv">0</span>, <span class="va">False</span>, <span class="dv">3</span><span class="op">&lt;</span><span class="dv">2</span>])</span>
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="va">False</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="operaciones-que-modifican-una-lista" class="level3" data-number="6.1.5">
-<h3 data-number="6.1.5" class="anchored" data-anchor-id="operaciones-que-modifican-una-lista"><span class="header-section-number">6.1.5</span> Operaciones que modifican una lista</h3>
+<section id="operaciones-que-modifican-una-lista" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="operaciones-que-modifican-una-lista"><span class="header-section-number">6.6</span> Operaciones que modifican una lista</h2>
 <ul>
 <li><code>l1 + l2</code> : Crea una nueva lista concatenan los elementos de la listas <code>l1</code> y <code>l2</code>.</li>
 <li><code>l.append(dato)</code> : Añade <code>dato</code> al final de la lista <code>l</code>.</li>
@@ -657,8 +668,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> c</span>
 <span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>[<span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="copia-de-listas" class="level3" data-number="6.1.6">
-<h3 data-number="6.1.6" class="anchored" data-anchor-id="copia-de-listas"><span class="header-section-number">6.1.6</span> Copia de listas</h3>
+<section id="copia-de-listas" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="copia-de-listas"><span class="header-section-number">6.7</span> Copia de listas</h2>
 <p>Existen dos formas de copiar listas:</p>
 <ul>
 <li><strong>Copia por referencia</strong> <code>l1 = l2</code>: Asocia la la variable <code>l1</code> la misma lista que tiene asociada la variable <code>l2</code>, es decir, ambas variables apuntan a la misma dirección de memoria. Cualquier cambio que hagamos a través de <code>l1</code> o <code>l2</code> afectará a la misma lista.</li>
@@ -686,7 +697,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

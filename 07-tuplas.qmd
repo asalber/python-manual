@@ -1,10 +1,6 @@
 # Tuplas
 
-## Tuplas
-
 Una **tupla** es una secuencias ordenadas de objetos de distintos tipos.
-
-Se construyen poniendo los elementos entre corchetes `(`  `)` separados por comas.
 
 Se caracterizan por:
 
@@ -13,6 +9,10 @@ Se caracterizan por:
 - Son inmutables, es decir, no pueden alterarse durante la ejecución de un programa.
 
 Se usan habitualmente para representar colecciones de datos una determinada estructura semántica, como por ejemplo un vector o una matriz.
+
+## Creación de tuplas con paréntesis
+
+Para crear una tupla basta con escribir sus elementos entre paréntesis `(`  `)` separados por comas.
 
 ```python
 # Tupla vacía
@@ -26,7 +26,7 @@ type(())
 ((1, 2, 3), (4, 5, 6))
 ```
 
-### Creación de tuplas mediante la función `tuple()`
+## Creación de tuplas mediante la función `tuple()`
 
 Otra forma de crear tuplas es mediante la función `tuple()`.
 
@@ -45,7 +45,7 @@ Se pueden indicar los elementos separados por comas, mediante una cadena, o medi
 (1, 2, 3)
 ```
 
-### Operaciones con tuplas
+## Operaciones con tuplas
 
 El acceso a los elementos de una tupla se realiza del mismo modo que en las listas.
 También se pueden obtener subtuplas de la misma manera que las sublistas.

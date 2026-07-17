@@ -6,7 +6,9 @@ Para asignar a una variable un valor introducido por el usuario en la consola se
 
 `input(mensaje)` : Muestra la cadena `mensaje` por la terminal y devuelve una cadena con la entrada del usuario.  
 
-<i class="fa fa-exclamation-triangle" style="color:red;"></i> _El valor devuelto siempre es una cadena, incluso si el usuario introduce un dato numérico._
+::: {.callout-warning}
+El valor devuelto siempre es una cadena, incluso si el usuario introduce un dato numérico.
+:::
 
 ```python
 >>> language = input('¿Cuál es tu lenguaje favorito? ')
@@ -19,7 +21,7 @@ Para asignar a una variable un valor introducido por el usuario en la consola se
 '20'
 ```
 
-### Salida por terminal (`print()`)
+## Salida por terminal (`print()`)
 
 Para mostrar un dato por la terminal se utiliza la instrucción
 
@@ -45,3 +47,38 @@ HolaAlf
 >>> print('Hola', name, end='!\n')
 Hola Alf!
 ```
+
+## Salida formateada por terminal (cadenas f)
+
+Para construir cadenas que combinen texto con el valor de variables o expresiones de una forma más cómoda y legible que con `format()`, Python ofrece las **cadenas f** (_f-strings_). Se escriben anteponiendo la letra `f` a la cadena, y dentro de ella se pueden incluir variables o expresiones entre llaves `{}`, que serán sustituidas por su valor.
+
+```python
+>>> name = 'Alf'
+>>> age = 20
+>>> print(f'Me llamo {name} y tengo {age} años')
+Me llamo Alf y tengo 20 años
+>>> print(f'El año que viene tendré {age + 1} años')
+El año que viene tendré 21 años
+```
+
+Al igual que con `format()`, dentro de las llaves se puede añadir, tras el signo `:`, un formato para controlar la alineación, la anchura o el número de decimales con los que se muestra el valor:
+
+- `{valor:n}` : Alinea `valor` a la izquierda rellenando con espacios por la derecha hasta los `n` caracteres.
+- `{valor:>n}` : Alinea `valor` a la derecha rellenando con espacios por la izquierda hasta los `n` caracteres.
+- `{valor:^n}` : Alinea `valor` en el centro rellenando con espacios por la izquierda y por la derecha hasta los `n` caracteres.
+- `{valor:nd}` : Formatea `valor` como un número entero con `n` caracteres rellenando con espacios en blanco por la izquierda.
+- `{valor:n.mf}` : Formatea `valor` como un número real con un tamaño de `n` caracteres (incluido el separador de decimales) y `m` cifras decimales, rellenando con espacios en blanco por la izquierda.
+
+```python
+>>> pi = 3.141592
+>>> print(f'Pi vale {pi:8.2f}')
+Pi vale     3.14
+>>> dia = 'Lunes'
+>>> temperatura = 21.4
+>>> print(f'{dia:<10}{temperatura:>6.1f} ºC')
+Lunes       21.4 ºC
+```
+
+::: {.callout-warning}
+Las cadenas f solo están disponibles a partir de Python 3.6.
+:::

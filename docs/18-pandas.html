@@ -80,8 +80,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3401a95b39ddee773afad36d04e16f62.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-acd2f942bef30007f70c13ca6b9aeec6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-82be1df1625442a14a32b67ca9799ca5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-407db9a3e711352b026d38d8f50b5f87.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -432,7 +432,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-comprension-colecciones.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -916,7 +916,19 @@ window.Quarto = {
 <ul>
 <li><code>DataFrame(data=diccionario, index=filas, columns=columnas, dtype=tipos)</code> : Devuelve un objeto del tipo DataFrame cuyas columnas son las listas contenidas en los valores del diccionario <code>diccionario</code>, los nombres de filas indicados en la lista <code>filas</code>, los nombres de columnas indicados en la lista <code>columnas</code> y los tipos indicados en la lista <code>tipos</code>. La lista <code>filas</code> tiene que tener el mismo tamaño que las listas del diccionario, mientras que las listas <code>columnas</code> y <code>tipos</code> tienen que tener el mismo tamaño que el diccionario. Si no se pasa la lista de filas se utilizan como nombres los enteros empezando en 0. Si no se pasa la lista de columnas se utilizan como nombres las claves del diccionario. Si no se pasa la lista de tipos, se infiere.</li>
 </ul>
-<p><i class="fa fa-exclamation-triangle" style="color:red"></i> Los valores asociados a las claves del diccionario deben ser listas del mismo tamaño.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Los valores asociados a las claves del diccionario deben ser listas del mismo tamaño.</p>
+</div>
+</div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> datos <span class="op">=</span> {<span class="st">'nombre'</span>:[<span class="st">'María'</span>, <span class="st">'Luis'</span>, <span class="st">'Carmen'</span>, <span class="st">'Antonio'</span>],</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>... <span class="st">'edad'</span>:[<span class="dv">18</span>, <span class="dv">22</span>, <span class="dv">20</span>, <span class="dv">21</span>],</span>
@@ -937,7 +949,19 @@ window.Quarto = {
 <ul>
 <li><code>DataFrame(data=listas, index=filas, columns=columnas, dtype=tipos)</code> : Devuelve un objeto del tipo DataFrame cuyas columnas son los valores de las listas de la lista <code>listas</code>, los nombres de filas indicados en la lista <code>filas</code>, los nombres de columnas indicados en la lista <code>columnas</code> y los tipos indicados en la lista <code>tipos</code>. La lista <code>filas</code>, tiene que tener el mismo tamaño que la lista <code>listas</code> mientras que las listas <code>columnas</code> y <code>tipos</code> tienen que tener el mismo tamaño que las listas anidadas en <code>listas</code>. Si no se pasa la lista de filas o de columnas se utilizan enteros empezando en 0. Si no se pasa la lista de tipos, se infiere.</li>
 </ul>
-<p><i class="fa fa-exclamation-triangle" style="color:red"></i> Si las listas anidadas en <code>listas</code> no tienen el mismo tamaño, las listas menores se rellenan con valores <code>NaN</code>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si las listas anidadas en <code>listas</code> no tienen el mismo tamaño, las listas menores se rellenan con valores <code>NaN</code>.</p>
+</div>
+</div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> df <span class="op">=</span> pd.DataFrame([[<span class="st">'María'</span>, <span class="dv">18</span>], [<span class="st">'Luis'</span>, <span class="dv">22</span>], [<span class="st">'Carmen'</span>, <span class="dv">20</span>]], columns<span class="op">=</span>[<span class="st">'Nombre'</span>, <span class="st">'Edad'</span>])</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(df)</span>
@@ -952,7 +976,19 @@ window.Quarto = {
 <ul>
 <li><code>DataFrame(data=diccionarios, index=filas, columns=columnas, dtype=tipos)</code> : Devuelve un objeto del tipo DataFrame cuyas filas contienen los valores de los diccionarios de la lista <code>diccionarios</code>, los nombres de filas indicados en la lista <code>filas</code>, los nombres de columnas indicados en la lista <code>columnas</code> y los tipos indicados en la lista <code>tipos</code>. La lista <code>filas</code> tiene que tener el mismo tamaño que la lista <code>lista</code>. Si no se pasa la lista de filas se utilizan enteros empezando en 0. Si no se pasa la lista de columnas se utilizan las claves de los diccionarios. Si no se pasa la lista de tipos, se infiere.</li>
 </ul>
-<p><i class="fa fa-exclamation-triangle" style="color:red"></i> Si los diccionarios no tienen las mismas claves, las claves que no aparecen en el diccionario se rellenan con valores <code>NaN</code>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si los diccionarios no tienen las mismas claves, las claves que no aparecen en el diccionario se rellenan con valores <code>NaN</code>.</p>
+</div>
+</div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> df <span class="op">=</span> pd.DataFrame([{<span class="st">'Nombre'</span>:<span class="st">'María'</span>, <span class="st">'Edad'</span>:<span class="dv">18</span>}, {<span class="st">'Nombre'</span>:<span class="st">'Luis'</span>, <span class="st">'Edad'</span>:<span class="dv">22</span>}, {<span class="st">'Nombre'</span>:<span class="st">'Carmen'</span>}])</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(df)</span>
@@ -1529,7 +1565,19 @@ window.Quarto = {
 <ul>
 <li><code>df.concat(dataframes, axis = eje)</code>: Devuelve el DataFrame que resulta de concatenar los DataFrames de la lista <code>dataframes</code>. Si <code>eje</code> es 0 (valor por defecto) la concatenación se realiza por filas, y si <code>eje</code> es 1 se realiza por columnas.</li>
 </ul>
-<p><i class="fa fa-exclamation-triangle" style="color:red"></i>Si los DataFrames que se concatenan por filas no tienen el mismo índice de columnas, el DataFrame resultante incluirá todas las columnas existentes en los DataFrames y rellenará con valores <code>NaN</code> los datos no disponibles. Si los DataFrames que se concatenan por columnas no tienen el mismo índice de filas, el DataFrame resultante incluirá todas las filas existentes en los DataFrames y rellenará con valores <code>NaN</code> los datos no disponibles.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si los DataFrames que se concatenan por filas no tienen el mismo índice de columnas, el DataFrame resultante incluirá todas las columnas existentes en los DataFrames y rellenará con valores <code>NaN</code> los datos no disponibles. Si los DataFrames que se concatenan por columnas no tienen el mismo índice de filas, el DataFrame resultante incluirá todas las filas existentes en los DataFrames y rellenará con valores <code>NaN</code> los datos no disponibles.</p>
+</div>
+</div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> df1 <span class="op">=</span> pd.DataFrame({<span class="st">"Nombre"</span>:[<span class="st">"Carmen"</span>, <span class="st">"Luis"</span>], </span>
 <span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>... <span class="st">"Sexo"</span>:[<span class="st">"Mujer"</span>, <span class="st">"Hombre"</span>], <span class="st">"Edad"</span>:[<span class="dv">22</span>, <span class="dv">18</span>]}).set_index(<span class="st">"Nombre"</span>)</span>

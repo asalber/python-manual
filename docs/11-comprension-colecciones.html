@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Comprensión de Colecciones – Manual de Python</title>
+<title>11&nbsp; Comprensión de colecciones – Manual de Python</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -80,8 +80,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3401a95b39ddee773afad36d04e16f62.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-acd2f942bef30007f70c13ca6b9aeec6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-82be1df1625442a14a32b67ca9799ca5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-407db9a3e711352b026d38d8f50b5f87.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -112,9 +112,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="custom.css">
-<meta property="og:title" content="11&nbsp; Comprensión de Colecciones – Manual de Python">
+<meta property="og:title" content="11&nbsp; Comprensión de colecciones – Manual de Python">
 <meta property="og:description" content="">
-<meta property="og:image" content="img/logo-python.png">
+<meta property="og:image" content="img/logos/sticker.png">
 <meta property="og:site_name" content="Manual de Python">
 </head>
 
@@ -287,7 +287,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./11-comprension-colecciones.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./11-comprension-colecciones.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -403,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-comprension-colecciones.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -487,11 +487,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#comprensión-de-colecciones" id="toc-comprensión-de-colecciones" class="nav-link active" data-scroll-target="#comprensión-de-colecciones"><span class="header-section-number">11.1</span> Comprensión de colecciones</a>
-  <ul class="collapse">
-  <li><a href="#comprensión-de-listas" id="toc-comprensión-de-listas" class="nav-link" data-scroll-target="#comprensión-de-listas"><span class="header-section-number">11.1.1</span> Comprensión de listas</a></li>
-  <li><a href="#comprensión-de-diccionarios" id="toc-comprensión-de-diccionarios" class="nav-link" data-scroll-target="#comprensión-de-diccionarios"><span class="header-section-number">11.1.2</span> Comprensión de diccionarios</a></li>
-  </ul></li>
+  <li><a href="#comprensión-de-listas" id="toc-comprensión-de-listas" class="nav-link active" data-scroll-target="#comprensión-de-listas"><span class="header-section-number">11.1</span> Comprensión de listas</a></li>
+  <li><a href="#comprensión-de-diccionarios" id="toc-comprensión-de-diccionarios" class="nav-link" data-scroll-target="#comprensión-de-diccionarios"><span class="header-section-number">11.2</span> Comprensión de diccionarios</a></li>
   </ul>
 </nav>
     </div>
@@ -501,7 +498,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></h1>
 </div>
 
 
@@ -518,11 +515,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="comprensión-de-colecciones" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="comprensión-de-colecciones"><span class="header-section-number">11.1</span> Comprensión de colecciones</h2>
 <p>En muchas aplicaciones es habitual aplicar una función o realizar una operación con los elementos de una colección (lista, tupla o diccionario) y obtener una nueva colección de elementos transformados. Aunque esto se puede hacer recorriendo la secuencia con un bucle iterativo, y en programación funcional mediante la función <code>map</code>, Python incorpora un mecanismo muy potente que permite esto mismo de manera más simple.</p>
-<section id="comprensión-de-listas" class="level3" data-number="11.1.1">
-<h3 data-number="11.1.1" class="anchored" data-anchor-id="comprensión-de-listas"><span class="header-section-number">11.1.1</span> Comprensión de listas</h3>
+<section id="comprensión-de-listas" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="comprensión-de-listas"><span class="header-section-number">11.1</span> Comprensión de listas</h2>
 <blockquote class="blockquote">
 <p>[<em>expresion</em> <code>for</code> <em>variable</em> <code>in</code> <em>lista</em> <code>if</code> <em>condicion</em>]</p>
 </blockquote>
@@ -537,8 +532,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> [nombre <span class="cf">for</span> (nombre, nota) <span class="kw">in</span> notas.items() <span class="cf">if</span> nota <span class="op">&gt;=</span> <span class="dv">5</span>]</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>[<span class="st">'Carmen'</span>, <span class="st">'Juan'</span>, <span class="st">'Mónica'</span>, <span class="st">'María'</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="comprensión-de-diccionarios" class="level3" data-number="11.1.2">
-<h3 data-number="11.1.2" class="anchored" data-anchor-id="comprensión-de-diccionarios"><span class="header-section-number">11.1.2</span> Comprensión de diccionarios</h3>
+<section id="comprensión-de-diccionarios" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="comprensión-de-diccionarios"><span class="header-section-number">11.2</span> Comprensión de diccionarios</h2>
 <blockquote class="blockquote">
 <p>{<em>expresion-clave</em><code>:</code><em>expresion-valor</em> <code>for</code> <em>variables</em> <code>in</code> <em>lista</em> <code>if</code> <em>condicion</em>}</p>
 </blockquote>
@@ -550,7 +545,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>{<span class="st">'Carmen'</span>: <span class="dv">6</span>, <span class="st">'Juan'</span>: <span class="dv">9</span>, <span class="st">'Mónica'</span>: <span class="dv">10</span>, <span class="st">'María'</span>: <span class="dv">7</span>}</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

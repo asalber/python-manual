@@ -9,7 +9,9 @@ Repite la ejecución del bloque de código mientras la expresión lógica `condi
 
 Se puede interrumpir en cualquier momento la ejecución del bloque de código con la instrucción `break`.
 
-<i class="fa fa-exclamation-triangle" style="color:red;"></i> _El bloque de código debe estar indentado por 4 espacios._
+:::{.callout-warning}
+El bloque de código debe estar indentado por 4 espacios.
+:::
 
 ```python
 >>> # Pregunta al usuario por un número hasta que introduce 0.
@@ -47,7 +49,9 @@ Repite la ejecución del bloque de código para cada elemento de la secuencia `s
 
 Se puede interrumpir en cualquier momento la ejecución del bloque de código con la instrucción `break` o saltar la ejecución para un determinado elemento de la secuencia con la instrucción `continue`.
 
-<i class="fa fa-exclamation-triangle" style="color:red;"></i> _El bloque de código debe estar indentado por 4 espacios._
+:::{.callout-warning}
+El bloque de código debe estar indentado por 4 espacios.
+:::
 
 Se utiliza fundamentalmente para recorrer colecciones de objetos como cadenas, listas, tuplas o diccionarios.
 

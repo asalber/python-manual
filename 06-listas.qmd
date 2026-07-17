@@ -1,16 +1,16 @@
 # Listas
 
-## Listas
-
 Una **lista** es una secuencias ordenadas de objetos de distintos tipos.
-
-Se construyen poniendo los elementos entre corchetes `[`  `]` separados por comas.
 
 Se caracterizan por:
 
 - Tienen orden.
 - Pueden contener elementos de distintos tipos.
 - Son mutables, es decir, pueden alterarse durante la ejecución de un programa.
+
+## Creación de listas con corchetes
+
+Para crear una lista, basta con poner los elementos entre corchetes `[`  `]` separados por comas.
 
 ```python
 # Lista vacía
@@ -22,7 +22,7 @@ Se caracterizan por:
 >>> [1, [2, 3], 4]
 ```
 
-### Creación de listas mediante la función `list()`
+## Creación de listas mediante la función `list()`
 
 Otra forma de crear listas es mediante la función `list()`.
 
@@ -39,13 +39,15 @@ Se pueden indicar los elementos separados por comas, mediante una cadena, o medi
 ['P', 'y', 't', 'h', 'o', 'n']
 ```
 
-### Acceso a los elementos de una lista
+## Acceso a los elementos de una lista
 
 Se utilizan los mismos operadores de acceso que para cadenas de caracteres.
 
 - `l[i]` : Devuelve el elemento de la lista `l` con el índice `i`.
 
-<i class="fa fa-exclamation-triangle" style="color:red;"></i> _El índice del primer elemento de la lista es 0._
+::: {.callout-warning}
+El índice del primer elemento de la lista es 0.
+:::
 
 ```python
 >>> a = ['P', 'y', 't', 'h', 'o', 'n']
@@ -61,7 +63,7 @@ IndexError: list index out of range
 'n'
 ```
 
-### Sublistas
+## Sublistas
 
 - `l[i:j:k]` : Devuelve la sublista desde el elemento de `l` con el índice `i` hasta el elemento anterior al índice `j`, tomando elementos cada `k`.
 
@@ -79,7 +81,7 @@ IndexError: list index out of range
 ['P', 't', 'o']
 ```
 
-### Operaciones que no modifican una lista
+## Operaciones que no modifican una lista
 
 - `len(l)` : Devuelve el número de elementos de la lista `l`.
 - `min(l)` : Devuelve el mínimo elemento de la lista `l` siempre que los datos sean comparables.
@@ -113,7 +115,7 @@ True
 False
 ```
 
-### Operaciones que modifican una lista
+## Operaciones que modifican una lista
 
 - `l1 + l2` : Crea una nueva lista concatenan los elementos de la listas `l1` y `l2`.
 - `l.append(dato)` : Añade `dato` al final de la lista `l`. 
@@ -149,7 +151,7 @@ False
 [5, 4, 3, 2, 1]
 ```
 
-### Copia de listas
+## Copia de listas
 
 Existen dos formas de copiar listas:
 

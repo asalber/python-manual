@@ -168,6 +168,22 @@
 \DeclareMathOperator{\Ac}{Ac}
 \DeclareMathOperator{\sen}{sen}
 \makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother
 \makeatletter
@@ -333,8 +349,21 @@ programación con este lenguaje, con abundantes ejemplos.
   \href{18-pandas.qmd}{La librería Pandas}
 \item
   \href{19-matplotlib.qmd}{La librería Matplotlib}
+\end{enumerate}
+
+\section*{Apéndices}\label{apuxe9ndices}
+\addcontentsline{toc}{section}{Apéndices}
+
+\markright{Apéndices}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{19}
+\tightlist
 \item
   \href{20-depuracion.qmd}{Depuración de código}
+\item
+  \href{21-referencias.qmd}{Referencias}
 \end{enumerate}
 
 \section*{Licencia}\label{licencia}
@@ -718,12 +747,20 @@ Cadena & \texttt{P} & \texttt{y} & \texttt{t} & \texttt{h} & \texttt{o}
   índice \texttt{i}.
 \end{itemize}
 
-\emph{El índice del primer carácter de la cadena es 0.}
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+El índice del primer carácter de la cadena es 0.
+
+\end{tcolorbox}
 
 También se pueden utilizar índices negativos para recorrer la cadena del
 final al principio.
 
-\emph{El índice del último carácter de la cadena es -1.}
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+El índice del último carácter de la cadena es -1.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -831,8 +868,12 @@ cadenas}\label{operaciones-de-comparaciuxf3n-de-cadenas}
   contrario.
 \end{itemize}
 
-\emph{Utilizan el orden establecido en el
-\href{https://www.codigosascii.com/}{código ASCII}}.
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Utilizan el orden establecido en el
+\href{https://www.codigosascii.com/}{código ASCII}.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1119,8 +1160,12 @@ consola se utiliza la instrucción
 \texttt{input(mensaje)} : Muestra la cadena \texttt{mensaje} por la
 terminal y devuelve una cadena con la entrada del usuario.
 
-\emph{El valor devuelto siempre es una cadena, incluso si el usuario
-introduce un dato numérico.}
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+El valor devuelto siempre es una cadena, incluso si el usuario introduce
+un dato numérico.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1135,7 +1180,7 @@ introduce un dato numérico.}
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{\texorpdfstring{Salida por terminal
+\section{\texorpdfstring{Salida por terminal
 (\texttt{print()})}{Salida por terminal (print())}}\label{salida-por-terminal-print}
 
 Para mostrar un dato por la terminal se utiliza la instrucción
@@ -1177,6 +1222,74 @@ donde
 \end{Highlighting}
 \end{Shaded}
 
+\section{Salida formateada por terminal (cadenas
+f)}\label{salida-formateada-por-terminal-cadenas-f}
+
+Para construir cadenas que combinen texto con el valor de variables o
+expresiones de una forma más cómoda y legible que con \texttt{format()},
+Python ofrece las \textbf{cadenas f} (\emph{f-strings}). Se escriben
+anteponiendo la letra \texttt{f} a la cadena, y dentro de ella se pueden
+incluir variables o expresiones entre llaves \texttt{\{\}}, que serán
+sustituidas por su valor.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\OperatorTok{\textgreater{}\textgreater{}\textgreater{}}\NormalTok{ name }\OperatorTok{=} \StringTok{\textquotesingle{}Alf\textquotesingle{}}
+\OperatorTok{\textgreater{}\textgreater{}\textgreater{}}\NormalTok{ age }\OperatorTok{=} \DecValTok{20}
+\OperatorTok{\textgreater{}\textgreater{}\textgreater{}} \BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f\textquotesingle{}Me llamo }\SpecialCharTok{\{}\NormalTok{name}\SpecialCharTok{\}}\SpecialStringTok{ y tengo }\SpecialCharTok{\{}\NormalTok{age}\SpecialCharTok{\}}\SpecialStringTok{ años\textquotesingle{}}\NormalTok{)}
+\NormalTok{Me llamo Alf y tengo }\DecValTok{20}\NormalTok{ años}
+\OperatorTok{\textgreater{}\textgreater{}\textgreater{}} \BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f\textquotesingle{}El año que viene tendré }\SpecialCharTok{\{}\NormalTok{age }\OperatorTok{+} \DecValTok{1}\SpecialCharTok{\}}\SpecialStringTok{ años\textquotesingle{}}\NormalTok{)}
+\NormalTok{El año que viene tendré }\DecValTok{21}\NormalTok{ años}
+\end{Highlighting}
+\end{Shaded}
+
+Al igual que con \texttt{format()}, dentro de las llaves se puede
+añadir, tras el signo \texttt{:}, un formato para controlar la
+alineación, la anchura o el número de decimales con los que se muestra
+el valor:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{\{valor:n\}} : Alinea \texttt{valor} a la izquierda rellenando
+  con espacios por la derecha hasta los \texttt{n} caracteres.
+\item
+  \texttt{\{valor:\textgreater{}n\}} : Alinea \texttt{valor} a la
+  derecha rellenando con espacios por la izquierda hasta los \texttt{n}
+  caracteres.
+\item
+  \texttt{\{valor:\^{}n\}} : Alinea \texttt{valor} en el centro
+  rellenando con espacios por la izquierda y por la derecha hasta los
+  \texttt{n} caracteres.
+\item
+  \texttt{\{valor:nd\}} : Formatea \texttt{valor} como un número entero
+  con \texttt{n} caracteres rellenando con espacios en blanco por la
+  izquierda.
+\item
+  \texttt{\{valor:n.mf\}} : Formatea \texttt{valor} como un número real
+  con un tamaño de \texttt{n} caracteres (incluido el separador de
+  decimales) y \texttt{m} cifras decimales, rellenando con espacios en
+  blanco por la izquierda.
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\OperatorTok{\textgreater{}\textgreater{}\textgreater{}}\NormalTok{ pi }\OperatorTok{=} \FloatTok{3.141592}
+\OperatorTok{\textgreater{}\textgreater{}\textgreater{}} \BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f\textquotesingle{}Pi vale }\SpecialCharTok{\{}\NormalTok{pi}\SpecialCharTok{:8.2f\}}\SpecialStringTok{\textquotesingle{}}\NormalTok{)}
+\NormalTok{Pi vale     }\FloatTok{3.14}
+\OperatorTok{\textgreater{}\textgreater{}\textgreater{}}\NormalTok{ dia }\OperatorTok{=} \StringTok{\textquotesingle{}Lunes\textquotesingle{}}
+\OperatorTok{\textgreater{}\textgreater{}\textgreater{}}\NormalTok{ temperatura }\OperatorTok{=} \FloatTok{21.4}
+\OperatorTok{\textgreater{}\textgreater{}\textgreater{}} \BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f\textquotesingle{}}\SpecialCharTok{\{}\NormalTok{dia}\SpecialCharTok{:\textless{}10\}\{}\NormalTok{temperatura}\SpecialCharTok{:\textgreater{}6.1f\}}\SpecialStringTok{ ºC\textquotesingle{}}\NormalTok{)}
+\NormalTok{Lunes       }\FloatTok{21.4}\NormalTok{ ºC}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Las cadenas f solo están disponibles a partir de Python 3.6.
+
+\end{tcolorbox}
+
 \bookmarksetup{startatroot}
 
 \chapter{Condicionales}\label{condicionales}
@@ -1203,7 +1316,11 @@ el bloque de código después de \texttt{else:}.
 Pueden aparecer varios bloques \texttt{elif} pero solo uno \texttt{else}
 al final.
 
-\emph{Los bloques de código deben estar indentados por 4 espacios.}
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Los bloques de código deben estar indentados por 4 espacios.
+
+\end{tcolorbox}
 
 La instrucción condicional permite evaluar el estado del programa y
 tomar decisiones sobre qué código ejecutar en función del mismo.
@@ -1249,7 +1366,11 @@ Repite la ejecución del bloque de código mientras la expresión lógica
 Se puede interrumpir en cualquier momento la ejecución del bloque de
 código con la instrucción \texttt{break}.
 
-\emph{El bloque de código debe estar indentado por 4 espacios.}
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+El bloque de código debe estar indentado por 4 espacios.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1300,7 +1421,11 @@ código con la instrucción \texttt{break} o saltar la ejecución para un
 determinado elemento de la secuencia con la instrucción
 \texttt{continue}.
 
-\emph{El bloque de código debe estar indentado por 4 espacios.}
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+El bloque de código debe estar indentado por 4 espacios.
+
+\end{tcolorbox}
 
 Se utiliza fundamentalmente para recorrer colecciones de objetos como
 cadenas, listas, tuplas o diccionarios.
@@ -1346,13 +1471,8 @@ A menudo se usan con la instrucción \texttt{range}:
 
 \chapter{Listas}\label{listas}
 
-\section{Listas}\label{listas-1}
-
 Una \textbf{lista} es una secuencias ordenadas de objetos de distintos
 tipos.
-
-Se construyen poniendo los elementos entre corchetes \texttt{{[}}
-\texttt{{]}} separados por comas.
 
 Se caracterizan por:
 
@@ -1367,6 +1487,12 @@ Se caracterizan por:
   programa.
 \end{itemize}
 
+\section{Creación de listas con
+corchetes}\label{creaciuxf3n-de-listas-con-corchetes}
+
+Para crear una lista, basta con poner los elementos entre corchetes
+\texttt{{[}} \texttt{{]}} separados por comas.
+
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Lista vacía}
@@ -1379,7 +1505,7 @@ Se caracterizan por:
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{\texorpdfstring{Creación de listas mediante la función
+\section{\texorpdfstring{Creación de listas mediante la función
 \texttt{list()}}{Creación de listas mediante la función list()}}\label{creaciuxf3n-de-listas-mediante-la-funciuxf3n-list}
 
 Otra forma de crear listas es mediante la función \texttt{list()}.
@@ -1405,7 +1531,7 @@ cadena, o mediante una colección de elementos iterable.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Acceso a los elementos de una
+\section{Acceso a los elementos de una
 lista}\label{acceso-a-los-elementos-de-una-lista}
 
 Se utilizan los mismos operadores de acceso que para cadenas de
@@ -1418,7 +1544,11 @@ caracteres.
   índice \texttt{i}.
 \end{itemize}
 
-\emph{El índice del primer elemento de la lista es 0.}
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+El índice del primer elemento de la lista es 0.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1436,7 +1566,7 @@ caracteres.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Sublistas}\label{sublistas}
+\section{Sublistas}\label{sublistas}
 
 \begin{itemize}
 \tightlist
@@ -1462,7 +1592,7 @@ caracteres.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Operaciones que no modifican una
+\section{Operaciones que no modifican una
 lista}\label{operaciones-que-no-modifican-una-lista}
 
 \begin{itemize}
@@ -1520,7 +1650,7 @@ lista}\label{operaciones-que-no-modifican-una-lista}
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Operaciones que modifican una
+\section{Operaciones que modifican una
 lista}\label{operaciones-que-modifican-una-lista}
 
 \begin{itemize}
@@ -1582,7 +1712,7 @@ lista}\label{operaciones-que-modifican-una-lista}
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Copia de listas}\label{copia-de-listas}
+\section{Copia de listas}\label{copia-de-listas}
 
 Existen dos formas de copiar listas:
 
@@ -1637,13 +1767,8 @@ Existen dos formas de copiar listas:
 
 \chapter{Tuplas}\label{tuplas}
 
-\section{Tuplas}\label{tuplas-1}
-
 Una \textbf{tupla} es una secuencias ordenadas de objetos de distintos
 tipos.
-
-Se construyen poniendo los elementos entre corchetes \texttt{(}
-\texttt{)} separados por comas.
 
 Se caracterizan por:
 
@@ -1662,6 +1787,12 @@ Se usan habitualmente para representar colecciones de datos una
 determinada estructura semántica, como por ejemplo un vector o una
 matriz.
 
+\section{Creación de tuplas con
+paréntesis}\label{creaciuxf3n-de-tuplas-con-paruxe9ntesis}
+
+Para crear una tupla basta con escribir sus elementos entre paréntesis
+\texttt{(} \texttt{)} separados por comas.
+
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Tupla vacía}
@@ -1676,7 +1807,7 @@ matriz.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{\texorpdfstring{Creación de tuplas mediante la función
+\section{\texorpdfstring{Creación de tuplas mediante la función
 \texttt{tuple()}}{Creación de tuplas mediante la función tuple()}}\label{creaciuxf3n-de-tuplas-mediante-la-funciuxf3n-tuple}
 
 Otra forma de crear tuplas es mediante la función \texttt{tuple()}.
@@ -1704,7 +1835,7 @@ cadena, o mediante una colección de elementos iterable.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Operaciones con tuplas}\label{operaciones-con-tuplas}
+\section{Operaciones con tuplas}\label{operaciones-con-tuplas}
 
 El acceso a los elementos de una tupla se realiza del mismo modo que en
 las listas. También se pueden obtener subtuplas de la misma manera que
@@ -1736,13 +1867,8 @@ aplicables a las tuplas.
 
 \chapter{Diccionarios}\label{diccionarios}
 
-\section{Diccionarios}\label{diccionarios-1}
-
 Un diccionario es una colección de pares formados por una \emph{clave} y
 un \emph{valor} asociado a la clave.
-
-Se construyen poniendo los pares entre llaves \texttt{\{\ \}} separados
-por comas, y separando la clave del valor con dos puntos \texttt{:}.
 
 Se caracterizan por:
 
@@ -1760,6 +1886,13 @@ Se caracterizan por:
   diccionario, y pueden ser de cualquier tipo de datos inmutable.
 \end{itemize}
 
+\section{Creación de diccionarios con
+llaves}\label{creaciuxf3n-de-diccionarios-con-llaves}
+
+Para crear un diccionario basta con escribir sus pares entre llaves
+\texttt{\{\ \}} separados por comas. En cada par del diccionario la
+clave se separa del valor asociado con dos puntos \texttt{:}.
+
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\# Diccionario vacío}
@@ -1772,7 +1905,7 @@ Se caracterizan por:
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Acceso a los elementos de un
+\section{Acceso a los elementos de un
 diccionario}\label{acceso-a-los-elementos-de-un-diccionario}
 
 \begin{itemize}
@@ -1803,7 +1936,7 @@ diccionario}\label{acceso-a-los-elementos-de-un-diccionario}
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Operaciones que no modifican un
+\section{Operaciones que no modifican un
 diccionario}\label{operaciones-que-no-modifican-un-diccionario}
 
 \begin{itemize}
@@ -1853,7 +1986,7 @@ diccionario}\label{operaciones-que-no-modifican-un-diccionario}
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Operaciones que modifican un
+\section{Operaciones que modifican un
 diccionario}\label{operaciones-que-modifican-un-diccionario}
 
 \begin{itemize}
@@ -1904,7 +2037,7 @@ diccionario}\label{operaciones-que-modifican-un-diccionario}
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Copia de diccionarios}\label{copia-de-diccionarios}
+\section{Copia de diccionarios}\label{copia-de-diccionarios}
 
 Existen dos formas de copiar diccionarios:
 
@@ -1959,12 +2092,12 @@ Existen dos formas de copiar diccionarios:
 
 \chapter{Funciones}\label{funciones}
 
-\section{\texorpdfstring{Funciones
-(\texttt{def})}{Funciones (def)}}\label{funciones-def}
-
 Una función es un bloque de código que tiene asociado un nombre, de
 manera que cada vez que se quiera ejecutar el bloque de código basta con
 invocar el nombre de la función.
+
+\section{\texorpdfstring{Creación de funciones
+(\texttt{def})}{Creación de funciones (def)}}\label{creaciuxf3n-de-funciones-def}
 
 Para declarar una función se utiliza la siguiente sintaxis:
 
@@ -1987,7 +2120,7 @@ Para declarar una función se utiliza la siguiente sintaxis:
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Parámetros y argumentos de una
+\section{Parámetros y argumentos de una
 función}\label{paruxe1metros-y-argumentos-de-una-funciuxf3n}
 
 Una función puede recibir valores cuando se invoca a través de unas
@@ -2010,7 +2143,7 @@ parámetros de la declaración de la función.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Paso de argumentos a una
+\section{Paso de argumentos a una
 función}\label{paso-de-argumentos-a-una-funciuxf3n}
 
 Los argumentos se pueden pasar de dos formas:
@@ -2039,7 +2172,7 @@ Los argumentos se pueden pasar de dos formas:
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Retorno de una función}\label{retorno-de-una-funciuxf3n}
+\section{Retorno de una función}\label{retorno-de-una-funciuxf3n}
 
 Una función puede devolver un objeto de cualquier tipo tras su
 invocación. Para ello el objeto a devolver debe escribirse detrás de la
@@ -2082,9 +2215,13 @@ argumento por defecto.
 \end{Highlighting}
 \end{Shaded}
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 Los parámetros con un argumento por defecto deben indicarse después de
 los parámetros sin argumentos por defectos. De lo contrario se produce
 un error.
+
+\end{tcolorbox}
 
 \section{Pasar un número indeterminado de
 argumentos}\label{pasar-un-nuxfamero-indeterminado-de-argumentos}
@@ -2364,8 +2501,6 @@ Después se puede acceder a la documentación de la función con la función
 
 \chapter{Programación funcional}\label{programaciuxf3n-funcional}
 
-\section{Programación funcional}\label{programaciuxf3n-funcional-1}
-
 En Python las funciones son objetos de primera clase, es decir, que
 pueden pasarse como argumentos de una función, al igual que el resto de
 los tipos de datos.
@@ -2388,7 +2523,7 @@ los tipos de datos.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{\texorpdfstring{Funciones anónimas
+\section{\texorpdfstring{Funciones anónimas
 (\texttt{lambda})}{Funciones anónimas (lambda)}}\label{funciones-anuxf3nimas-lambda}
 
 Existe un tipo especial de funciones que no tienen nombre asociado y se
@@ -2411,7 +2546,7 @@ que hacer la llamada.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{\texorpdfstring{Aplicar una función a todos los elementos de
+\section{\texorpdfstring{Aplicar una función a todos los elementos de
 una colección iterable
 (\texttt{map})}{Aplicar una función a todos los elementos de una colección iterable (map)}}\label{aplicar-una-funciuxf3n-a-todos-los-elementos-de-una-colecciuxf3n-iterable-map}
 
@@ -2443,8 +2578,8 @@ explícitamente las funciones \texttt{list()}, \texttt{tuple()} o
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Filtrar los elementos de una colección iterable
-(filter)}\label{filtrar-los-elementos-de-una-colecciuxf3n-iterable-filter}
+\section{\texorpdfstring{Filtrar los elementos de una colección iterable
+(\texttt{filter})}{Filtrar los elementos de una colección iterable (filter)}}\label{filtrar-los-elementos-de-una-colecciuxf3n-iterable-filter}
 
 \texttt{filter(f,\ c)} : Devuelve una objeto iterable con los elementos
 de la colección \texttt{c} que devuelven \texttt{True} al aplicarles la
@@ -2452,8 +2587,12 @@ función \texttt{f}. Para convertir el objeto en una lista, tupla o
 diccionario hay que aplicar explícitamente las funciones
 \texttt{list()}, \texttt{tuple()} o \texttt{dic()} respectivamente.
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 \texttt{f} debe ser una función que recibe un argumento y devuelve un
 valor booleano.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2465,7 +2604,7 @@ valor booleano.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{\texorpdfstring{Combinar los elementos de varias colecciones
+\section{\texorpdfstring{Combinar los elementos de varias colecciones
 iterables
 (\texttt{zip})}{Combinar los elementos de varias colecciones iterables (zip)}}\label{combinar-los-elementos-de-varias-colecciones-iterables-zip}
 
@@ -2488,7 +2627,7 @@ explícitamente las funciones \texttt{list()}, \texttt{tuple()} o
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{\texorpdfstring{Operar todos los elementos de una colección
+\section{\texorpdfstring{Operar todos los elementos de una colección
 iterable
 (\texttt{reduce})}{Operar todos los elementos de una colección iterable (reduce)}}\label{operar-todos-los-elementos-de-una-colecciuxf3n-iterable-reduce}
 
@@ -2515,10 +2654,7 @@ La función \texttt{reduce} está definida en el módulo
 \bookmarksetup{startatroot}
 
 \chapter{Comprensión de
-Colecciones}\label{comprensiuxf3n-de-colecciones}
-
-\section{Comprensión de
-colecciones}\label{comprensiuxf3n-de-colecciones-1}
+colecciones}\label{comprensiuxf3n-de-colecciones}
 
 En muchas aplicaciones es habitual aplicar una función o realizar una
 operación con los elementos de una colección (lista, tupla o
@@ -2528,7 +2664,7 @@ iterativo, y en programación funcional mediante la función \texttt{map},
 Python incorpora un mecanismo muy potente que permite esto mismo de
 manera más simple.
 
-\subsection{Comprensión de listas}\label{comprensiuxf3n-de-listas}
+\section{Comprensión de listas}\label{comprensiuxf3n-de-listas}
 
 \begin{quote}
 {[}\emph{expresion} \texttt{for} \emph{variable} \texttt{in}
@@ -2554,7 +2690,7 @@ de la lista \emph{lista} que cumplen la condición \emph{condición}.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Comprensión de
+\section{Comprensión de
 diccionarios}\label{comprensiuxf3n-de-diccionarios}
 
 \begin{quote}
@@ -2583,8 +2719,6 @@ lista \emph{lista} que cumplen la condición \emph{condición}.
 
 \chapter{Ficheros}\label{ficheros}
 
-\section{Ficheros}\label{ficheros-1}
-
 Hasta ahora hemos visto como interactuar con un programa a través del
 teclado (entrada de datos) y la terminal (salida), pero en la mayor
 parte de las aplicaciones reales tendremos que leer y escribir datos en
@@ -2607,7 +2741,7 @@ Las operaciones más habituales con ficheros son:
   Borrar un fichero.
 \end{itemize}
 
-\subsection{Creación y escritura de
+\section{Creación y escritura de
 ficheros}\label{creaciuxf3n-y-escritura-de-ficheros}
 
 Para crear un fichero nuevo se utiliza la siguiente función:
@@ -2621,8 +2755,12 @@ Para crear un fichero nuevo se utiliza la siguiente función:
   referencia.
 \end{itemize}
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 Si el fichero indicado por la ruta ya existe en el sistema, se
 reemplazará por el nuevo.
+
+\end{tcolorbox}
 
 Una vez creado el fichero, para escribir datos en él se utiliza el
 siguiente método:
@@ -2643,8 +2781,7 @@ siguiente método:
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Añadir datos a un
-fichero}\label{auxf1adir-datos-a-un-fichero}
+\section{Añadir datos a un fichero}\label{auxf1adir-datos-a-un-fichero}
 
 Si en lugar de crear un fichero nuevo queremos añadir datos a un fichero
 existente se debe utilizar la siguiente función:
@@ -2668,7 +2805,7 @@ los datos se añaden al final del fichero.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Leer datos de un fichero}\label{leer-datos-de-un-fichero}
+\section{Leer datos de un fichero}\label{leer-datos-de-un-fichero}
 
 Para abrir un fichero en modo lectura se utiliza la siguiente función:
 
@@ -2712,7 +2849,7 @@ funciones:
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Cerrar un fichero}\label{cerrar-un-fichero}
+\section{Cerrar un fichero}\label{cerrar-un-fichero}
 
 Para cerrar un fichero se utiliza el siguiente método:
 
@@ -2739,7 +2876,7 @@ ya no se va a usar más.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{\texorpdfstring{La estructura
+\section{\texorpdfstring{La estructura
 \texttt{with\ open(...)\ as}}{La estructura with open(...) as}}\label{la-estructura-with-open...-as}
 
 Para despreocuparnos del cierre de un fichero cuando ya no es necesario
@@ -2776,7 +2913,7 @@ automáticamente cuando termina la ejecución del bloque.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Renombrado y borrado de un
+\section{Renombrado y borrado de un
 fichero}\label{renombrado-y-borrado-de-un-fichero}
 
 Para renombra o borrar un fichero se utilizan funciones del módulo
@@ -2793,7 +2930,7 @@ para que no se produzca un error. Para ello se utiliza la función
 \texttt{os.path.isfile(ruta)} : Devuelve \texttt{True} si existe un
 fichero en la ruta \texttt{ruta} y \texttt{False} en caso contrario.
 
-\subsection{Renombrado y borrado de un fichero o
+\section{Renombrado y borrado de un fichero o
 directorio}\label{renombrado-y-borrado-de-un-fichero-o-directorio}
 
 \begin{Shaded}
@@ -2814,7 +2951,7 @@ directorio}\label{renombrado-y-borrado-de-un-fichero-o-directorio}
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Creación, cambio y eliminación de
+\section{Creación, cambio y eliminación de
 directorios}\label{creaciuxf3n-cambio-y-eliminaciuxf3n-de-directorios}
 
 Para trabajar con directorios también se utilizan funciones del módulo
@@ -2835,8 +2972,7 @@ actual.
 \texttt{os.rmdir(ruta)} : Borra el directorio de la ruta \texttt{ruta},
 siempre y cuando esté vacío.
 
-\subsection{Leer un fichero de
-internet}\label{leer-un-fichero-de-internet}
+\section{Leer un fichero de internet}\label{leer-un-fichero-de-internet}
 
 Para leer un fichero de internet hay que utilizar la función
 \texttt{urlopen} del módulo \texttt{urllib.request}.
@@ -2862,9 +2998,6 @@ métodos de lectura de ficheros anteriores.
 
 \chapter{Excepciones}\label{excepciones}
 
-\section{Control de errores mediante
-excepciones}\label{control-de-errores-mediante-excepciones}
-
 Python utiliza un objeto especial llamado \textbf{excepción} para
 controlar cualquier error que pueda ocurrir durante la ejecución de un
 programa.
@@ -2882,7 +3015,7 @@ programa se detiene y se muestra el error (\emph{traceback}).
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Tipos de excepciones}\label{tipos-de-excepciones}
+\section{Tipos de excepciones}\label{tipos-de-excepciones}
 
 Los principales excepciones definidas en Python son:
 
@@ -2892,7 +3025,8 @@ Los principales excepciones definidas en Python son:
   \texttt{TypeError} : Ocurre cuando se aplica una operación o función a
   un dato del tipo inapropiado.
 \item
-  \texttt{ZeroDivisionError} : Ocurre cuando se itenta dividir por cero.
+  \texttt{ZeroDivisionError} : Ocurre cuando se intenta dividir por
+  cero.
 \item
   \texttt{OverflowError} : Ocurre cuando un cálculo excede el límite
   para un tipo de dato numérico.
@@ -2910,16 +3044,15 @@ Los principales excepciones definidas en Python son:
   módulo.
 \end{itemize}
 
-Consultar la documentaciónde Python para ver la
+Consultar la documentación de Python para ver la
 \href{https://docs.python.org/3/library/exceptions.html}{lista de
-exepciones predefinidas}.
+excepciones predefinidas}.
 
-\subsection{Control de excepciones}\label{control-de-excepciones}
+\section{\texorpdfstring{Control de excepciones
+(\texttt{try\ -\ except\ -\ else})}{Control de excepciones (try - except - else)}}\label{control-de-excepciones-try---except---else}
 
-\subsubsection{\texorpdfstring{\texttt{try\ -\ except\ -\ else}}{try - except - else}}\label{try---except---else}
-
-Para evitar la interrución de la ejecución del programa cuando se
-produce un error, es posible controlar la exepción que se genera con la
+Para evitar la interrupción de la ejecución del programa cuando se
+produce un error, es posible controlar la excepción que se genera con la
 siguiente instrucción:
 
 \begin{quote}
@@ -2935,8 +3068,6 @@ Esta instrucción ejecuta el primer bloque de código y si se produce un
 error que genera una excepción del tipo \emph{excepción} entonces
 ejecuta el segundo bloque de código, mientras que si no se produce
 ningún error, se ejecuta el tercer bloque de código.
-
-\subsection{Control de excepciones}\label{control-de-excepciones-1}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2972,12 +3103,12 @@ ningún error, se ejecuta el tercer bloque de código.
 \chapter{Programación Orientada a
 Objetos}\label{programaciuxf3n-orientada-a-objetos}
 
-\section{Objetos}\label{objetos}
-
 Python también permite \emph{la programación orientada a objetos}, que
 es un paradigma de programación en la que los datos y las operaciones
 que pueden realizarse con esos datos se agrupan en unidades lógicas
 llamadas \textbf{objetos}.
+
+\section{Objetos}\label{objetos}
 
 Los objetos suelen representar conceptos del dominio del programa, como
 un estudiante, un coche, un teléfono, etc. Los datos que describen las
@@ -3000,6 +3131,16 @@ objeto:
 \item
   Métodos: Activar, pagar, renovar, anular.
 \end{itemize}
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/mediabag/img/tarjeta-credito.pdf}}
+
+}
+
+\caption{Atributos y métodos del objeto tarjeta de crédito}
+
+\end{figure}%
 
 \subsection{Acceso a los atributos y métodos de un
 objeto}\label{acceso-a-los-atributos-y-muxe9todos-de-un-objeto}
@@ -3101,7 +3242,11 @@ clase está vacía.
 \end{Highlighting}
 \end{Shaded}
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 Es una buena práctica comenzar el nombre de una clase con mayúsculas.
+
+\end{tcolorbox}
 
 \subsection{Clases primitivas}\label{clases-primitivas}
 
@@ -3239,8 +3384,12 @@ son propios de cada objeto y por tanto pueden tomar valores distintos,
 los valores de los atributos de la clase son los mismos para cualquier
 objeto de la clase.
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 En general, no deben usarse atributos de clase, excepto para almacenar
 valores constantes.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -3353,6 +3502,16 @@ A partir de una clase derivada mediante herencia se pueden crear nuevas
 clases hijas aplicando de nuevo la herencia. Ello da lugar a una
 jerarquía de clases que puede representarse como un árbol donde cada
 clase hija se representa como una rama que sale de la clase madre.
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{index_files/mediabag/img/jerarquia-clases.pdf}}
+
+}
+
+\caption{Atributos y métodos del objeto tarjeta de crédito}
+
+\end{figure}%
 
 Debido a la herencia, cualquier objeto creado a partir de una clase es
 una instancia de la clase, pero también lo es de las clases que son
@@ -3489,8 +3648,6 @@ el problema principal (\emph{¡divide y vencerás!}).
 
 \chapter{Módulos}\label{muxf3dulos}
 
-\section{Módulos}\label{muxf3dulos-1}
-
 El código de un programa en Python puede reutilizarse en otro
 importándolo. Cualquier fichero con código de Python reutilizable se
 conoce como \emph{módulo} o \emph{librería}.
@@ -3504,7 +3661,7 @@ Cuando se importa un módulo completo, el intérprete de Python ejecuta
 todo el código que contiene el módulo, mientras que si solo se importan
 algunas partes del módulo, solo se ejecutarán esas partes.
 
-\subsection{\texorpdfstring{Importación completa de módulos
+\section{\texorpdfstring{Importación completa de módulos
 (\texttt{import})}{Importación completa de módulos (import)}}\label{importaciuxf3n-completa-de-muxf3dulos-import}
 
 \begin{itemize}
@@ -3521,7 +3678,7 @@ algunas partes del módulo, solo se ejecutarán esas partes.
   para utilizar un alias más corto.
 \end{itemize}
 
-\subsection{\texorpdfstring{Importación parcial de módulos
+\section{\texorpdfstring{Importación parcial de módulos
 (\texttt{from\ import})}{Importación parcial de módulos (from import)}}\label{importaciuxf3n-parcial-de-muxf3dulos-from-import}
 
 \begin{itemize}
@@ -3538,9 +3695,13 @@ algunas partes del módulo, solo se ejecutarán esas partes.
   de manera que pueden ser invocados por su nombre.
 \end{itemize}
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 Cuando se importen módulos de esta manera hay que tener cuidado de que
 no haya coincidencias en los nombres de funciones, variables u otros
 objetos.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -3564,7 +3725,7 @@ objetos.
 \end{Highlighting}
 \end{Shaded}
 
-\subsection{Módulos de la librería estándar más
+\section{Módulos de la librería estándar más
 importantes}\label{muxf3dulos-de-la-libreruxeda-estuxe1ndar-muxe1s-importantes}
 
 Python viene con una
@@ -3603,7 +3764,7 @@ son:
   Generación de números pseudo-aleatorios.
 \end{itemize}
 
-\subsection{Otras librerías
+\section{Otras librerías
 imprescindibles}\label{otras-libreruxedas-imprescindibles}
 
 Estas librerías no vienen en la distribución estándar de Python y
@@ -3694,8 +3855,6 @@ y
 \DecValTok{2020}\OperatorTok{{-}}\DecValTok{12}\OperatorTok{{-}}\DecValTok{25} \DecValTok{13}\NormalTok{:}\DecValTok{30}\NormalTok{:}\DecValTok{0}\ErrorTok{5}
 \end{Highlighting}
 \end{Shaded}
-
---
 
 \section{Acceso a los componentes de una
 fecha}\label{acceso-a-los-componentes-de-una-fecha}
@@ -3927,7 +4086,11 @@ Para crear un array se utiliza la siguiente función de NumPy
   array más allá de la memoria disponible en el sistema.
 \end{itemize}
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 Los elementos de la lista o tupla deben ser del mismo tipo.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4847,8 +5010,12 @@ columnas se utiliza el método:
   lista de tipos, se infiere.
 \end{itemize}
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 Los valores asociados a las claves del diccionario deben ser listas del
 mismo tamaño.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4890,8 +5057,12 @@ las columnas se utiliza el siguiente método:
   la lista de tipos, se infiere.
 \end{itemize}
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 Si las listas anidadas en \texttt{listas} no tienen el mismo tamaño, las
 listas menores se rellenan con valores \texttt{NaN}.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4926,8 +5097,12 @@ datos de las filas, se utiliza el siguiente método:
   lista de tipos, se infiere.
 \end{itemize}
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 Si los diccionarios no tienen las mismas claves, las claves que no
 aparecen en el diccionario se rellenan con valores \texttt{NaN}.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5991,6 +6166,8 @@ Para concatenar dos o más DataFrames se utiliza el siguiente método:
   por columnas.
 \end{itemize}
 
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
 Si los DataFrames que se concatenan por filas no tienen el mismo índice
 de columnas, el DataFrame resultante incluirá todas las columnas
 existentes en los DataFrames y rellenará con valores \texttt{NaN} los
@@ -5998,6 +6175,8 @@ datos no disponibles. Si los DataFrames que se concatenan por columnas
 no tienen el mismo índice de filas, el DataFrame resultante incluirá
 todas las filas existentes en los DataFrames y rellenará con valores
 \texttt{NaN} los datos no disponibles.
+
+\end{tcolorbox}
 
 \begin{Shaded}
 \begin{Highlighting}[]

@@ -14,7 +14,7 @@ color7 <- "#03BF3D"
 color8 <- "#DB1286"
 
 # Carga de la imagen
-img <- image_read("img/logos/infinito.png")
+img <- image_read("img/logos/python.png")
 # Modificación de la imagen
 # img <- img %>%
 # image_convert("png") %>%
@@ -24,10 +24,10 @@ img <- image_read("img/logos/infinito.png")
 
 # Creación del hex sticker
 sticker <- sticker(img,
-    package = "Análisis\nManual", p_size = 17, p_y = 1,
+    package = "Python\nManual", p_size = 17, p_y = 1,
     s_x = 1, s_y = 1,
     s_width = 1.5, s_height = 1.5,
-    h_fill = color6, h_color = darken(color6, 0.2),
+    h_fill = color1, h_color = darken(color1, 0.2),
     url = "aprendeconalf.es",
     u_size = 9,
     u_color = "white",

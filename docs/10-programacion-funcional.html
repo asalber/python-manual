@@ -80,8 +80,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3401a95b39ddee773afad36d04e16f62.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-acd2f942bef30007f70c13ca6b9aeec6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-82be1df1625442a14a32b67ca9799ca5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-407db9a3e711352b026d38d8f50b5f87.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="10&nbsp; Programación funcional – Manual de Python">
 <meta property="og:description" content="">
-<meta property="og:image" content="img/logo-python.png">
+<meta property="og:image" content="img/logos/sticker.png">
 <meta property="og:site_name" content="Manual de Python">
 </head>
 
@@ -403,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-comprension-colecciones.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -487,14 +487,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#programación-funcional" id="toc-programación-funcional" class="nav-link active" data-scroll-target="#programación-funcional"><span class="header-section-number">10.1</span> Programación funcional</a>
-  <ul class="collapse">
-  <li><a href="#funciones-anónimas-lambda" id="toc-funciones-anónimas-lambda" class="nav-link" data-scroll-target="#funciones-anónimas-lambda"><span class="header-section-number">10.1.1</span> Funciones anónimas (<code>lambda</code>)</a></li>
-  <li><a href="#aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map" id="toc-aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map" class="nav-link" data-scroll-target="#aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map"><span class="header-section-number">10.1.2</span> Aplicar una función a todos los elementos de una colección iterable (<code>map</code>)</a></li>
-  <li><a href="#filtrar-los-elementos-de-una-colección-iterable-filter" id="toc-filtrar-los-elementos-de-una-colección-iterable-filter" class="nav-link" data-scroll-target="#filtrar-los-elementos-de-una-colección-iterable-filter"><span class="header-section-number">10.1.3</span> Filtrar los elementos de una colección iterable (filter)</a></li>
-  <li><a href="#combinar-los-elementos-de-varias-colecciones-iterables-zip" id="toc-combinar-los-elementos-de-varias-colecciones-iterables-zip" class="nav-link" data-scroll-target="#combinar-los-elementos-de-varias-colecciones-iterables-zip"><span class="header-section-number">10.1.4</span> Combinar los elementos de varias colecciones iterables (<code>zip</code>)</a></li>
-  <li><a href="#operar-todos-los-elementos-de-una-colección-iterable-reduce" id="toc-operar-todos-los-elementos-de-una-colección-iterable-reduce" class="nav-link" data-scroll-target="#operar-todos-los-elementos-de-una-colección-iterable-reduce"><span class="header-section-number">10.1.5</span> Operar todos los elementos de una colección iterable (<code>reduce</code>)</a></li>
-  </ul></li>
+  <li><a href="#funciones-anónimas-lambda" id="toc-funciones-anónimas-lambda" class="nav-link active" data-scroll-target="#funciones-anónimas-lambda"><span class="header-section-number">10.1</span> Funciones anónimas (<code>lambda</code>)</a></li>
+  <li><a href="#aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map" id="toc-aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map" class="nav-link" data-scroll-target="#aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map"><span class="header-section-number">10.2</span> Aplicar una función a todos los elementos de una colección iterable (<code>map</code>)</a></li>
+  <li><a href="#filtrar-los-elementos-de-una-colección-iterable-filter" id="toc-filtrar-los-elementos-de-una-colección-iterable-filter" class="nav-link" data-scroll-target="#filtrar-los-elementos-de-una-colección-iterable-filter"><span class="header-section-number">10.3</span> Filtrar los elementos de una colección iterable (<code>filter</code>)</a></li>
+  <li><a href="#combinar-los-elementos-de-varias-colecciones-iterables-zip" id="toc-combinar-los-elementos-de-varias-colecciones-iterables-zip" class="nav-link" data-scroll-target="#combinar-los-elementos-de-varias-colecciones-iterables-zip"><span class="header-section-number">10.4</span> Combinar los elementos de varias colecciones iterables (<code>zip</code>)</a></li>
+  <li><a href="#operar-todos-los-elementos-de-una-colección-iterable-reduce" id="toc-operar-todos-los-elementos-de-una-colección-iterable-reduce" class="nav-link" data-scroll-target="#operar-todos-los-elementos-de-una-colección-iterable-reduce"><span class="header-section-number">10.5</span> Operar todos los elementos de una colección iterable (<code>reduce</code>)</a></li>
   </ul>
 </nav>
     </div>
@@ -521,8 +518,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="programación-funcional" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="programación-funcional"><span class="header-section-number">10.1</span> Programación funcional</h2>
 <p>En Python las funciones son objetos de primera clase, es decir, que pueden pasarse como argumentos de una función, al igual que el resto de los tipos de datos.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> aplica(funcion, argumento):</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>...     <span class="cf">return</span> funcion(argumento)</span>
@@ -537,8 +532,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="dv">25</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> aplica(cubo, <span class="dv">5</span>)</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="dv">125</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<section id="funciones-anónimas-lambda" class="level3" data-number="10.1.1">
-<h3 data-number="10.1.1" class="anchored" data-anchor-id="funciones-anónimas-lambda"><span class="header-section-number">10.1.1</span> Funciones anónimas (<code>lambda</code>)</h3>
+<section id="funciones-anónimas-lambda" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="funciones-anónimas-lambda"><span class="header-section-number">10.1</span> Funciones anónimas (<code>lambda</code>)</h2>
 <p>Existe un tipo especial de funciones que no tienen nombre asociado y se conocen como <strong>funciones anónimas</strong> o <strong>funciones lambda</strong>.</p>
 <p>La sintaxis para definir una función anónima es</p>
 <blockquote class="blockquote">
@@ -549,8 +544,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> area(<span class="dv">4</span>, <span class="dv">5</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map" class="level3" data-number="10.1.2">
-<h3 data-number="10.1.2" class="anchored" data-anchor-id="aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map"><span class="header-section-number">10.1.2</span> Aplicar una función a todos los elementos de una colección iterable (<code>map</code>)</h3>
+<section id="aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="aplicar-una-función-a-todos-los-elementos-de-una-colección-iterable-map"><span class="header-section-number">10.2</span> Aplicar una función a todos los elementos de una colección iterable (<code>map</code>)</h2>
 <p><code>map(f, c)</code> : Devuelve una objeto iterable con los resultados de aplicar la función <code>f</code> a los elementos de la colección <code>c</code>. Si la función <code>f</code> requiere <code>n</code> argumentos entonces deben pasarse <code>n</code> colecciones con los argumentos. Para convertir el objeto en una lista, tupla o diccionario hay que aplicar explícitamente las funciones <code>list()</code>, <code>tuple()</code> o <code>dic()</code> respectivamente.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> cuadrado(n):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>...     <span class="cf">return</span> n <span class="op">*</span> n</span>
@@ -563,18 +558,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">tuple</span>(<span class="bu">map</span>(rectangulo, (<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), (<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>)))</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>(<span class="dv">4</span>, <span class="dv">10</span>, <span class="dv">18</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="filtrar-los-elementos-de-una-colección-iterable-filter" class="level3" data-number="10.1.3">
-<h3 data-number="10.1.3" class="anchored" data-anchor-id="filtrar-los-elementos-de-una-colección-iterable-filter"><span class="header-section-number">10.1.3</span> Filtrar los elementos de una colección iterable (filter)</h3>
+<section id="filtrar-los-elementos-de-una-colección-iterable-filter" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="filtrar-los-elementos-de-una-colección-iterable-filter"><span class="header-section-number">10.3</span> Filtrar los elementos de una colección iterable (<code>filter</code>)</h2>
 <p><code>filter(f, c)</code> : Devuelve una objeto iterable con los elementos de la colección <code>c</code> que devuelven <code>True</code> al aplicarles la función <code>f</code>. Para convertir el objeto en una lista, tupla o diccionario hay que aplicar explícitamente las funciones <code>list()</code>, <code>tuple()</code> o <code>dic()</code> respectivamente.</p>
-<p><i class="fa fa-exclamation-triangle" style="color:red;"></i> <code>f</code> debe ser una función que recibe un argumento y devuelve un valor booleano.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>f</code> debe ser una función que recibe un argumento y devuelve un valor booleano.</p>
+</div>
+</div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> par(n):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>...     <span class="cf">return</span> n <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>...</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="bu">filter</span>(par, <span class="bu">range</span>(<span class="dv">10</span>))</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>]</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="combinar-los-elementos-de-varias-colecciones-iterables-zip" class="level3" data-number="10.1.4">
-<h3 data-number="10.1.4" class="anchored" data-anchor-id="combinar-los-elementos-de-varias-colecciones-iterables-zip"><span class="header-section-number">10.1.4</span> Combinar los elementos de varias colecciones iterables (<code>zip</code>)</h3>
+<section id="combinar-los-elementos-de-varias-colecciones-iterables-zip" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="combinar-los-elementos-de-varias-colecciones-iterables-zip"><span class="header-section-number">10.4</span> Combinar los elementos de varias colecciones iterables (<code>zip</code>)</h2>
 <p><code>zip(c1, c2, ...)</code> : Devuelve un objeto iterable cuyos elementos son tuplas formadas por los elementos que ocupan la misma posición en las colecciones <code>c1</code>, <code>c2</code>, etc. El número de elementos de las tuplas es el número de colecciones que se pasen. Para convertir el objeto en una lista, tupla o diccionario hay que aplicar explícitamente las funciones <code>list()</code>, <code>tuple()</code> o <code>dic()</code> respectivamente.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> asignaturas <span class="op">=</span> [<span class="st">'Matemáticas'</span>, <span class="st">'Física'</span>, <span class="st">'Química'</span>, <span class="st">'Economía'</span>]</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> notas <span class="op">=</span> [<span class="fl">6.0</span>, <span class="fl">3.5</span>, <span class="fl">7.5</span>, <span class="fl">8.0</span>]</span>
@@ -583,8 +590,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">dict</span>(<span class="bu">zip</span>(asignaturas, notas[:<span class="dv">3</span>]))</span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>{<span class="st">'Matemáticas'</span>: <span class="fl">6.0</span>, <span class="st">'Física'</span>: <span class="fl">3.5</span>, <span class="st">'Química'</span>: <span class="fl">7.5</span>}</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="operar-todos-los-elementos-de-una-colección-iterable-reduce" class="level3" data-number="10.1.5">
-<h3 data-number="10.1.5" class="anchored" data-anchor-id="operar-todos-los-elementos-de-una-colección-iterable-reduce"><span class="header-section-number">10.1.5</span> Operar todos los elementos de una colección iterable (<code>reduce</code>)</h3>
+<section id="operar-todos-los-elementos-de-una-colección-iterable-reduce" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="operar-todos-los-elementos-de-una-colección-iterable-reduce"><span class="header-section-number">10.5</span> Operar todos los elementos de una colección iterable (<code>reduce</code>)</h2>
 <p><code>reduce(f, l)</code> : Aplicar la función <code>f</code> a los dos primeros elementos de la secuencia <code>l</code>. Con el valor obtenido vuelve a aplicar la función <code>f</code> a ese valor y el siguiente de la secuencia, y así hasta que no quedan más elementos en la lista. Devuelve el valor resultado de la última aplicación de la función <code>f</code>.</p>
 <p>La función <code>reduce</code> está definida en el módulo <code>functools</code>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> functools <span class="im">import</span> <span class="bu">reduce</span></span>
@@ -595,7 +602,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="dv">24</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1019,8 +1025,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./11-comprension-colecciones.html" class="pagination-link" aria-label="Comprensión de Colecciones">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./11-comprension-colecciones.html" class="pagination-link" aria-label="Comprensión de colecciones">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

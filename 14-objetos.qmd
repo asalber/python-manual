@@ -1,8 +1,8 @@
 # Programación Orientada a Objetos
 
-## Objetos
-
 Python también permite _la programación orientada a objetos_, que es un paradigma de programación en la que los datos y las operaciones que pueden realizarse con esos datos se agrupan en unidades lógicas llamadas **objetos**.
+
+## Objetos
 
 Los objetos suelen representar conceptos del dominio del programa, como un estudiante, un coche, un teléfono, etc. Los datos que describen las características del objeto se llaman **atributos** y son la parte estática del objeto, mientras que las operaciones que puede realizar el objeto se llaman **métodos** y son la parte dinámica del objeto. 
 
@@ -13,7 +13,7 @@ La programación orientada a objetos permite simplificar la estructura y la lóg
 - Atributos: Número de la tarjeta, titular, balance, fecha de caducidad, pin, entidad emisora, estado (activa o no), etc.
 - Métodos: Activar, pagar, renovar, anular.
 
-<img src="../img/tarjeta-credito.svg" alt="Atributos y métodos del objeto tarjeta de crédito" height="400px">
+![Atributos y métodos del objeto tarjeta de crédito](/img/tarjeta-credito.svg)
 
 ### Acceso a los atributos y métodos de un objeto
 
@@ -68,7 +68,9 @@ Los atributos se definen igual que las variables mientras que los métodos se de
 <class '__main__.Saludo'>
 ```
 
-<i class='fa fa-exclamation-triangle' style='color:red'></i> Es una buena práctica comenzar el nombre de una clase con mayúsculas.
+::: {.callout-warning}
+Es una buena práctica comenzar el nombre de una clase con mayúsculas.
+:::
 
 ### Clases primitivas
 
@@ -156,7 +158,9 @@ El saldo es 1000 €
 
 Los atributos que se crean dentro del método `__init__` se conocen como atributos del objeto, mientras que los que se crean fuera de él se conocen como atributos de la clase. Mientras que los primeros son propios de cada objeto y por tanto pueden tomar valores distintos, los valores de los atributos de la clase son los mismos para cualquier objeto de la clase.
 
-<i class='fa fa-exclamation-triangle' style='color:red'></i>En general, no deben usarse atributos de clase, excepto para almacenar valores constantes.
+::: {.callout-warning}
+En general, no deben usarse atributos de clase, excepto para almacenar valores constantes.
+:::
 
 ```python
 >>> class Circulo:
@@ -238,7 +242,7 @@ En el ejemplo de la tarjeta de crédito, el método `mostrar_saldo` solo se defi
 
 A partir de una clase derivada mediante herencia se pueden crear nuevas clases hijas aplicando de nuevo la herencia. Ello da lugar a una jerarquía de clases que puede representarse como un árbol donde cada clase hija se representa como una rama que sale de la clase madre.
 
-<img src="../img/jerarquia-clases.svg" alt="Atributos y métodos del objeto tarjeta de crédito" height="400px">
+![Atributos y métodos del objeto tarjeta de crédito](/img/jerarquia-clases.svg)
 
 Debido a la herencia, cualquier objeto creado a partir de una clase es una instancia de la clase, pero también lo es de las clases que son ancestros de esa clase en la jerarquía de clases.
 

@@ -1,10 +1,6 @@
 # Diccionarios
 
-## Diccionarios
-
 Un diccionario es una colección de pares formados por una _clave_ y un _valor_ asociado a la clave.
-
-Se construyen poniendo los pares entre llaves `{ }` separados por comas, y separando la clave del valor con dos puntos `:`.
 
 Se caracterizan por:
 
@@ -12,6 +8,10 @@ Se caracterizan por:
 - Pueden contener elementos de distintos tipos.
 - Son mutables, es decir, pueden alterarse durante la ejecución de un programa.
 - Las claves son únicas, es decir, no pueden repetirse en un mismo diccionario, y pueden ser de cualquier tipo de datos inmutable.
+
+## Creación de diccionarios con llaves
+
+Para crear un diccionario basta con escribir sus pares entre llaves `{ }` separados por comas. En cada par del diccionario la clave se separa del valor asociado con dos puntos `:`.
 
 ```python
 # Diccionario vacío
@@ -23,7 +23,7 @@ type({})
 {'nombre_completo':{'nombre': 'Alfredo', 'Apellidos': 'Sánchez Alberca'}}
 ```
 
-### Acceso a los elementos de un diccionario
+## Acceso a los elementos de un diccionario
 
 - `d[clave]` devuelve el valor del diccionario `d` asociado a la clave `clave`. Si en el diccionario no existe esa clave devuelve un error.
 - `d.get(clave, valor)` devuelve el valor del diccionario `d` asociado a la clave `clave`. Si en el diccionario no existe esa clave devuelve `valor`, y si no se especifica un valor por defecto devuelve `None`.
@@ -41,7 +41,7 @@ type({})
 'CEU'
 ```
 
-### Operaciones que no modifican un diccionario
+## Operaciones que no modifican un diccionario
 
 - `len(d)` : Devuelve el número de elementos del diccionario `d`.
 - `min(d)` : Devuelve la mínima clave del diccionario `d` siempre que las claves sean comparables.
@@ -68,7 +68,7 @@ dict_values(['Alfredo', 218, 'asalber@ceu.es'])
 dict_items([('nombre', 'Alfredo'), ('despacho', 218), ('email', 'asalber@ceu.es')])
 ```
 
-### Operaciones que modifican un diccionario
+## Operaciones que modifican un diccionario
 
 - `d[clave] = valor` : Añade al diccionario `d` el par formado por la clave `clave` y el valor `valor`.
 - `d.update(d2)`. Añade los pares del diccionario `d2` al diccionario `d`. 
@@ -99,7 +99,7 @@ dict_items([('nombre', 'Alfredo'), ('despacho', 218), ('email', 'asalber@ceu.es'
 {}
 ```
 
-### Copia de diccionarios
+## Copia de diccionarios
 
 Existen dos formas de copiar diccionarios:
 

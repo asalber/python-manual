@@ -80,8 +80,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3401a95b39ddee773afad36d04e16f62.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-acd2f942bef30007f70c13ca6b9aeec6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-82be1df1625442a14a32b67ca9799ca5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-407db9a3e711352b026d38d8f50b5f87.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -114,9 +114,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="14&nbsp; Programación Orientada a Objetos – Manual de Python">
 <meta property="og:description" content="">
-<meta property="og:image" content="../img/tarjeta-credito.svg">
+<meta property="og:image" content="./img/tarjeta-credito.svg">
 <meta property="og:site_name" content="Manual de Python">
-<meta property="og:image:alt" content="Atributos y métodos del objeto tarjeta de crédito">
 </head>
 
 <body class="nav-sidebar floating quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
@@ -404,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-comprension-colecciones.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -533,9 +532,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p>Python también permite <em>la programación orientada a objetos</em>, que es un paradigma de programación en la que los datos y las operaciones que pueden realizarse con esos datos se agrupan en unidades lógicas llamadas <strong>objetos</strong>.</p>
 <section id="objetos" class="level2" data-number="14.1">
 <h2 data-number="14.1" class="anchored" data-anchor-id="objetos"><span class="header-section-number">14.1</span> Objetos</h2>
-<p>Python también permite <em>la programación orientada a objetos</em>, que es un paradigma de programación en la que los datos y las operaciones que pueden realizarse con esos datos se agrupan en unidades lógicas llamadas <strong>objetos</strong>.</p>
 <p>Los objetos suelen representar conceptos del dominio del programa, como un estudiante, un coche, un teléfono, etc. Los datos que describen las características del objeto se llaman <strong>atributos</strong> y son la parte estática del objeto, mientras que las operaciones que puede realizar el objeto se llaman <strong>métodos</strong> y son la parte dinámica del objeto.</p>
 <p>La programación orientada a objetos permite simplificar la estructura y la lógica de los grandes programas en los que intervienen muchos objetos que interactúan entre si.</p>
 <p><strong>Ejemplo</strong>. Una tarjeta de crédito puede representarse como un objeto:</p>
@@ -543,7 +542,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Atributos: Número de la tarjeta, titular, balance, fecha de caducidad, pin, entidad emisora, estado (activa o no), etc.</li>
 <li>Métodos: Activar, pagar, renovar, anular.</li>
 </ul>
-<p><img src="../img/tarjeta-credito.svg" alt="Atributos y métodos del objeto tarjeta de crédito" height="400px"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./img/tarjeta-credito.svg" class="img-fluid figure-img"></p>
+<figcaption>Atributos y métodos del objeto tarjeta de crédito</figcaption>
+</figure>
+</div>
 <section id="acceso-a-los-atributos-y-métodos-de-un-objeto" class="level3" data-number="14.1.1">
 <h3 data-number="14.1.1" class="anchored" data-anchor-id="acceso-a-los-atributos-y-métodos-de-un-objeto"><span class="header-section-number">14.1.1</span> Acceso a los atributos y métodos de un objeto</h3>
 <ul>
@@ -585,7 +589,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>...     <span class="cf">pass</span>        <span class="co"># Clase vacía sin atributos ni métodos.</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(Saludo)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'__main__.Saludo'</span><span class="op">&gt;</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p><i class="fa fa-exclamation-triangle" style="color:red"></i> Es una buena práctica comenzar el nombre de una clase con mayúsculas.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Es una buena práctica comenzar el nombre de una clase con mayúsculas.</p>
+</div>
+</div>
 <section id="clases-primitivas" class="level3" data-number="14.2.1">
 <h3 data-number="14.2.1" class="anchored" data-anchor-id="clases-primitivas"><span class="header-section-number">14.2.1</span> Clases primitivas</h3>
 <p>En Python existen clases predefinidas para los tipos de datos primitivos:</p>
@@ -658,7 +674,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="atributos-de-instancia-vs-atributos-de-clase" class="level3" data-number="14.2.5">
 <h3 data-number="14.2.5" class="anchored" data-anchor-id="atributos-de-instancia-vs-atributos-de-clase"><span class="header-section-number">14.2.5</span> Atributos de instancia vs atributos de clase</h3>
 <p>Los atributos que se crean dentro del método <code>__init__</code> se conocen como atributos del objeto, mientras que los que se crean fuera de él se conocen como atributos de la clase. Mientras que los primeros son propios de cada objeto y por tanto pueden tomar valores distintos, los valores de los atributos de la clase son los mismos para cualquier objeto de la clase.</p>
-<p><i class="fa fa-exclamation-triangle" style="color:red"></i>En general, no deben usarse atributos de clase, excepto para almacenar valores constantes.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En general, no deben usarse atributos de clase, excepto para almacenar valores constantes.</p>
+</div>
+</div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">class</span> Circulo:</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>...     pi <span class="op">=</span> <span class="fl">3.14159</span>                     <span class="co"># Atributo de clase</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>...     <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, radio):</span>
@@ -726,7 +754,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="jerarquía-de-clases" class="level3" data-number="14.3.1">
 <h3 data-number="14.3.1" class="anchored" data-anchor-id="jerarquía-de-clases"><span class="header-section-number">14.3.1</span> Jerarquía de clases</h3>
 <p>A partir de una clase derivada mediante herencia se pueden crear nuevas clases hijas aplicando de nuevo la herencia. Ello da lugar a una jerarquía de clases que puede representarse como un árbol donde cada clase hija se representa como una rama que sale de la clase madre.</p>
-<p><img src="../img/jerarquia-clases.svg" alt="Atributos y métodos del objeto tarjeta de crédito" height="400px"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./img/jerarquia-clases.svg" class="img-fluid figure-img"></p>
+<figcaption>Atributos y métodos del objeto tarjeta de crédito</figcaption>
+</figure>
+</div>
 <p>Debido a la herencia, cualquier objeto creado a partir de una clase es una instancia de la clase, pero también lo es de las clases que son ancestros de esa clase en la jerarquía de clases.</p>
 <p>El siguiente comando permite averiguar si un objeto es instancia de una clase:</p>
 <ul>

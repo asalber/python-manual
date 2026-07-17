@@ -1,8 +1,8 @@
 # Funciones
 
-## Funciones (`def`)
-
 Una función es un bloque de código que tiene asociado un nombre, de manera que cada vez que se quiera ejecutar el bloque de código basta con invocar el nombre de la función.
+
+## Creación de funciones (`def`)
 
 Para declarar una función se utiliza la siguiente sintaxis:
 
@@ -21,7 +21,7 @@ Para declarar una función se utiliza la siguiente sintaxis:
 ¡Bienvenido a Python!
 ```
 
-### Parámetros y argumentos de una función
+## Parámetros y argumentos de una función
 
 Una función puede recibir valores cuando se invoca a través de unas variables conocidas como _parámetros_ que se definen entre paréntesis en la declaración de la función. En el cuerpo de la función se pueden usar estos parámetros como si fuesen variables.
 
@@ -36,7 +36,7 @@ Los valores que se pasan a la función en una llamada o invocación concreta de 
 ¡Bienvenido a Python Alf!
 ```
 
-### Paso de argumentos a una función
+## Paso de argumentos a una función
 
 Los argumentos se pueden pasar de dos formas:
 
@@ -54,7 +54,7 @@ Los argumentos se pueden pasar de dos formas:
 ¡Bienvenido a Python Alfredo Sánchez!
 ```
 
-### Retorno de una función
+## Retorno de una función
 
 Una función puede devolver un objeto de cualquier tipo tras su invocación. Para ello el objeto a devolver debe escribirse detrás de la palabra reservada `return`. Si no se indica ningún objeto, la función no devolverá nada.
 
@@ -85,7 +85,9 @@ En la definición de una función se puede asignar a cada parámetro un argument
 ¡Bienvenido a Java Alf!
 ```
 
-<i class="fa fa-exclamation-triangle" style="color:red;"></i>Los parámetros con un argumento por defecto deben indicarse después de los parámetros sin argumentos por defectos. De lo contrario se produce un error.
+::: {.callout-warning}
+Los parámetros con un argumento por defecto deben indicarse después de los parámetros sin argumentos por defectos. De lo contrario se produce un error.
+:::
 
 ## Pasar un número indeterminado de argumentos
 

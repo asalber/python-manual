@@ -29,7 +29,10 @@ lang: es
 17. [La librería Numpy](17-numpy.qmd)
 18. [La librería Pandas](18-pandas.qmd)
 19. [La librería Matplotlib](19-matplotlib.qmd)
+
+## Apéndices
 20. [Depuración de código](20-depuracion.qmd)
+21. [Referencias](21-referencias.qmd)
 
 ## Licencia
 

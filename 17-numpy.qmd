@@ -27,7 +27,9 @@ Para crear un array se utiliza la siguiente función de NumPy
 - Para una lista de listas de listas de valores se crea un array de tres dimensiones, también conocido como **cubo**.
 - Y así sucesivamente. No hay límite en el número de dimensiones del array más allá de la memoria disponible en el sistema.
 
-<i class="fa fa-exclamation-triangle" style="color:red;"></i> Los elementos de la lista o tupla deben ser del mismo tipo.
+::: {.callout-warning}
+Los elementos de la lista o tupla deben ser del mismo tipo.
+:::
 
 ```python
 >>> # Array de una dimensión

@@ -16,8 +16,8 @@ book:
   author: "Alfredo Sánchez Alberca"
   date: today
   output-file: "manual-python"
-  image: img/logo-python.png
-  cover-image: img/logos/logo-python.png
+  image: img/logos/sticker.png
+  cover-image: img/logos/sticker.png
   sharing: [linkedin]
   downloads: [pdf, epub]
   sidebar:

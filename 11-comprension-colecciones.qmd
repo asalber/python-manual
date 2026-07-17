@@ -1,10 +1,8 @@
-# Comprensión de Colecciones
-
-## Comprensión de colecciones
+# Comprensión de colecciones
 
 En muchas aplicaciones es habitual aplicar una función o realizar una operación con los elementos de una colección (lista, tupla o diccionario) y obtener una nueva colección de elementos transformados. Aunque esto se puede hacer recorriendo la secuencia con un bucle iterativo, y en programación funcional mediante la función `map`, Python incorpora un mecanismo muy potente que permite esto mismo de manera más simple.
 
-### Comprensión de listas
+## Comprensión de listas
 
 > [_expresion_ `for` _variable_ `in` _lista_ `if` _condicion_]
 
@@ -22,7 +20,7 @@ Esta instrucción genera la lista cuyos elementos son el resultado de evaluar la
 ['Carmen', 'Juan', 'Mónica', 'María']
 ```
 
-### Comprensión de diccionarios
+## Comprensión de diccionarios
 
 > {_expresion-clave_`:`_expresion-valor_ `for` _variables_ `in` _lista_ `if` _condicion_}
 

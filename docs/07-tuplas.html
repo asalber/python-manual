@@ -80,8 +80,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3401a95b39ddee773afad36d04e16f62.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-acd2f942bef30007f70c13ca6b9aeec6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-82be1df1625442a14a32b67ca9799ca5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-407db9a3e711352b026d38d8f50b5f87.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="7&nbsp; Tuplas – Manual de Python">
 <meta property="og:description" content="">
-<meta property="og:image" content="img/logo-python.png">
+<meta property="og:image" content="img/logos/sticker.png">
 <meta property="og:site_name" content="Manual de Python">
 </head>
 
@@ -403,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./11-comprension-colecciones.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de Colecciones</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Comprensión de colecciones</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -487,11 +487,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#tuplas" id="toc-tuplas" class="nav-link active" data-scroll-target="#tuplas"><span class="header-section-number">7.1</span> Tuplas</a>
-  <ul class="collapse">
-  <li><a href="#creación-de-tuplas-mediante-la-función-tuple" id="toc-creación-de-tuplas-mediante-la-función-tuple" class="nav-link" data-scroll-target="#creación-de-tuplas-mediante-la-función-tuple"><span class="header-section-number">7.1.1</span> Creación de tuplas mediante la función <code>tuple()</code></a></li>
-  <li><a href="#operaciones-con-tuplas" id="toc-operaciones-con-tuplas" class="nav-link" data-scroll-target="#operaciones-con-tuplas"><span class="header-section-number">7.1.2</span> Operaciones con tuplas</a></li>
-  </ul></li>
+  <li><a href="#creación-de-tuplas-con-paréntesis" id="toc-creación-de-tuplas-con-paréntesis" class="nav-link active" data-scroll-target="#creación-de-tuplas-con-paréntesis"><span class="header-section-number">7.1</span> Creación de tuplas con paréntesis</a></li>
+  <li><a href="#creación-de-tuplas-mediante-la-función-tuple" id="toc-creación-de-tuplas-mediante-la-función-tuple" class="nav-link" data-scroll-target="#creación-de-tuplas-mediante-la-función-tuple"><span class="header-section-number">7.2</span> Creación de tuplas mediante la función <code>tuple()</code></a></li>
+  <li><a href="#operaciones-con-tuplas" id="toc-operaciones-con-tuplas" class="nav-link" data-scroll-target="#operaciones-con-tuplas"><span class="header-section-number">7.3</span> Operaciones con tuplas</a></li>
   </ul>
 </nav>
     </div>
@@ -518,10 +516,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="tuplas" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="tuplas"><span class="header-section-number">7.1</span> Tuplas</h2>
 <p>Una <strong>tupla</strong> es una secuencias ordenadas de objetos de distintos tipos.</p>
-<p>Se construyen poniendo los elementos entre corchetes <code>(</code> <code>)</code> separados por comas.</p>
 <p>Se caracterizan por:</p>
 <ul>
 <li>Tienen orden.</li>
@@ -529,6 +524,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Son inmutables, es decir, no pueden alterarse durante la ejecución de un programa.</li>
 </ul>
 <p>Se usan habitualmente para representar colecciones de datos una determinada estructura semántica, como por ejemplo un vector o una matriz.</p>
+<section id="creación-de-tuplas-con-paréntesis" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="creación-de-tuplas-con-paréntesis"><span class="header-section-number">7.1</span> Creación de tuplas con paréntesis</h2>
+<p>Para crear una tupla basta con escribir sus elementos entre paréntesis <code>(</code> <code>)</code> separados por comas.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Tupla vacía</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(())</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span><span class="kw">class</span> <span class="st">'tuple'</span><span class="op">&gt;</span></span>
@@ -538,8 +536,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Matriz</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>((<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), (<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<section id="creación-de-tuplas-mediante-la-función-tuple" class="level3" data-number="7.1.1">
-<h3 data-number="7.1.1" class="anchored" data-anchor-id="creación-de-tuplas-mediante-la-función-tuple"><span class="header-section-number">7.1.1</span> Creación de tuplas mediante la función <code>tuple()</code></h3>
+</section>
+<section id="creación-de-tuplas-mediante-la-función-tuple" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="creación-de-tuplas-mediante-la-función-tuple"><span class="header-section-number">7.2</span> Creación de tuplas mediante la función <code>tuple()</code></h2>
 <p>Otra forma de crear tuplas es mediante la función <code>tuple()</code>.</p>
 <ul>
 <li><code>tuple(c)</code> : Crea una tupla con los elementos de la secuencia o colección <code>c</code>.</li>
@@ -554,8 +553,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">tuple</span>([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="operaciones-con-tuplas" class="level3" data-number="7.1.2">
-<h3 data-number="7.1.2" class="anchored" data-anchor-id="operaciones-con-tuplas"><span class="header-section-number">7.1.2</span> Operaciones con tuplas</h3>
+<section id="operaciones-con-tuplas" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="operaciones-con-tuplas"><span class="header-section-number">7.3</span> Operaciones con tuplas</h2>
 <p>El acceso a los elementos de una tupla se realiza del mismo modo que en las listas. También se pueden obtener subtuplas de la misma manera que las sublistas.</p>
 <p>Las operaciones de listas que no modifican la lista también son aplicables a las tuplas.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
@@ -574,7 +573,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
