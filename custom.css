@@ -1,0 +1,8 @@
+code:not(.sourceCode) {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.quarto-dark code:not(.sourceCode) {
+  color: #e8a33d !important;
+}

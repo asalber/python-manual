@@ -1,0 +1,51 @@
+---
+lang: es
+---
+
+# Prefacio {.unnumbered}
+
+¡Bienvenido al Manual de Python!
+
+[Python](https://www.python.org/) es uno de los lenguajes de programación más extendidos, que se caracteriza por ser fácil de aprender debido a que su sintaxis es fácil de entender para los humanos. En este manual se presentan los conceptos básicos para iniciarse en la programación con este lenguaje, con abundantes ejemplos.
+
+## Capítulos
+
+1. [Introducción a Python](01-introduccion-python.qmd)
+2. [Tipos de Datos Primitivos Simples](02-tipos-datos-simples.qmd)
+3. [Entrada y Salida por Terminal](03-entrada-salida.qmd)
+4. [Condicionales](04-condicionales.qmd)
+5. [Bucles](05-bucles.qmd)
+6. [Listas](06-listas.qmd)
+7. [Tuplas](07-tuplas.qmd)
+8. [Diccionarios](08-diccionarios.qmd)
+9. [Funciones](09-funciones.qmd)
+10. [Programación funcional](10-programacion-funcional.qmd)
+11. [Comprensión de Colecciones](11-comprension-colecciones.qmd)
+12. [Ficheros](12-ficheros.qmd)
+13. [Excepciones](13-excepciones.qmd)
+14. [Programación Orientada a Objetos](14-objetos.qmd)
+15. [Módulos](15-modulos.qmd)
+16. [La librería Datetime](16-datetime.qmd)
+17. [La librería Numpy](17-numpy.qmd)
+18. [La librería Pandas](18-pandas.qmd)
+19. [La librería Matplotlib](19-matplotlib.qmd)
+20. [Depuración de código](20-depuracion.qmd)
+
+## Licencia
+
+Esta obra está bajo una licencia Reconocimiento – No comercial – Compartir bajo la misma licencia 3.0 España de Creative Commons. Para ver una copia de esta licencia, visite [https://creativecommons.org/licenses/by-nc-sa/3.0/es/](https://creativecommons.org/licenses/by-nc-sa/3.0/es/).
+
+Con esta licencia eres libre de:
+
+- Copiar, distribuir y mostrar este trabajo.
+- Realizar modificaciones de este trabajo.
+
+Bajo las siguientes condiciones:
+
+- **Reconocimiento**. Debe reconocer los créditos de la obra de la manera especificada por el autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo o apoyan el uso que hace de su obra).
+
+- **No comercial**. No puede utilizar esta obra para fines comerciales.
+
+- **Compartir bajo la misma licencia**. Si altera o transforma esta obra, o genera una obra derivada, sólo puede distribuir la obra generada bajo una licencia idéntica a ésta.
+
+Al reutilizar o distribuir la obra, tiene que dejar bien claro los términos de la licencia de esta obra.

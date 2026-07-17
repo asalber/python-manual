@@ -1,0 +1,87 @@
+project:
+  type: book
+  output-dir: "docs"
+  preview:
+    port: 1313
+    browser: false
+
+lang: es
+
+website:
+  reader-mode: true
+
+book:
+  title: "Manual de Python"
+  subtitle: "Introducción a la programación con Python con ejemplos"
+  author: "Alfredo Sánchez Alberca"
+  date: today
+  output-file: "manual-python"
+  image: img/logo-python.png
+  cover-image: img/logos/logo-python.png
+  sharing: [linkedin]
+  downloads: [pdf, epub]
+  sidebar:
+    tools:
+      - icon: house-fill
+        href: https://aprendeconalf.es
+  open-graph: true
+  chapters:
+    - index.qmd
+    - 01-introduccion-python.qmd
+    - 02-tipos-datos-simples.qmd
+    - 03-entrada-salida.qmd
+    - 04-condicionales.qmd
+    - 05-bucles.qmd
+    - 06-listas.qmd
+    - 07-tuplas.qmd
+    - 08-diccionarios.qmd
+    - 09-funciones.qmd
+    - 10-programacion-funcional.qmd
+    - 11-comprension-colecciones.qmd
+    - 12-ficheros.qmd
+    - 13-excepciones.qmd
+    - 14-objetos.qmd
+    - 15-modulos.qmd
+    - 16-datetime.qmd
+    - 17-numpy.qmd
+    - 18-pandas.qmd
+    - 19-matplotlib.qmd
+  appendices:
+    - 20-depuracion.qmd
+    - 21-referencias.qmd
+
+format:
+  html:
+    highlight-style: a11y
+    theme:
+      dark: darkly
+      light: flatly
+    css: custom.css
+    html-math-method: mathjax
+    code-overflow: wrap
+    code-link: true
+    toc: true
+
+  pdf:
+    documentclass: scrreport
+    papersize: a4
+    default-image-extension: pdf
+    template-partials:
+      - before-body.tex
+    titlegraphic: img/logos/sticker.png
+    institution: CEU San Pablo
+    email: asalber@ceu.es
+    web: https://aprendeconalf.es
+    logo: img/logos/aprendeconalf.png
+    include-in-header:
+      - preamble.tex
+      - macros.tex
+    keep-tex: true
+    #mainfont: TeX Gyre Termes
+    #mainfontoptions:
+    #  - Numbers=Lowercase
+    #  - Numbers=Proportional    
+  epub:
+    cover-image: img/logos/sticker.png
+    html-math-method: mathml
+    toc: true
